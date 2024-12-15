@@ -1,0 +1,78 @@
+2024-11-20 15:01:38.4616 [info] establish log successfully!
+2024-11-20 15:01:38.31512 [debug] mysql connection initialization succeed
+2024-11-20 15:01:38.31637 [info] establish MYSQL connection pool successfully!
+2024-11-20 15:01:38.32197 [info] establish threadpool successfully!
+2024-11-20 15:01:38.32246 [info] establish timer manager successfully!
+2024-11-20 15:01:40.34594 [info] time out 
+
+2024-11-20 15:01:40.34643 [info] timer tick
+2024-11-20 15:01:42.35024 [info] time out 
+
+2024-11-20 15:01:42.35097 [info] timer tick
+2024-11-20 15:01:44.35334 [info] time out 
+
+2024-11-20 15:01:44.35377 [info] timer tick
+2024-11-20 15:01:46.35521 [info] time out 
+
+2024-11-20 15:01:46.35574 [info] timer tick
+2024-11-20 15:01:48.35874 [info] time out 
+
+2024-11-20 15:01:48.35969 [info] timer tick
+2024-11-20 15:01:50.36304 [info] time out 
+
+2024-11-20 15:01:50.36402 [info] timer tick
+2024-11-20 15:01:52.36500 [info] time out 
+
+2024-11-20 15:01:52.36617 [info] timer tick
+2024-11-20 15:01:54.37125 [info] time out 
+
+2024-11-20 15:01:54.37221 [info] timer tick
+2024-11-20 15:01:56.37257 [info] time out 
+
+2024-11-20 15:01:56.37326 [info] timer tick
+2024-11-20 15:01:58.37833 [info] time out 
+
+2024-11-20 15:01:58.37932 [info] timer tick
+2024-11-20 15:02:00.38234 [info] time out 
+
+2024-11-20 15:02:00.38398 [info] timer tick
+2024-11-20 15:02:02.39045 [info] time out 
+
+2024-11-20 15:02:02.39134 [info] timer tick
+2024-11-20 15:02:04.39383 [info] time out 
+
+2024-11-20 15:02:04.39446 [info] timer tick
+2024-11-20 15:02:06.39658 [info] time out 
+
+2024-11-20 15:02:06.39750 [info] timer tick
+2024-11-20 15:02:08.40681 [info] time out 
+
+2024-11-20 15:02:08.40788 [info] timer tick
+2024-11-20 15:02:10.41085 [info] time out 
+
+2024-11-20 15:02:10.41184 [info] timer tick
+2024-11-20 15:02:12.41285 [info] time out 
+
+2024-11-20 15:02:12.41378 [info] timer tick
+2024-11-20 15:02:14.41562 [info] time out 
+
+2024-11-20 15:03:16.631234 [info] establish log successfully!
+2024-11-20 15:03:16.656508 [debug] mysql connection initialization succeed
+2024-11-20 15:03:16.656550 [info] establish MYSQL connection pool successfully!
+2024-11-20 15:03:16.656720 [info] establish threadpool successfully!
+2024-11-20 15:03:16.656736 [info] establish timer manager successfully!
+2024-11-20 15:03:18.657876 [info] timer tick
+2024-11-20 15:03:20.658689 [info] timer tick
+2024-11-20 15:03:22.661115 [info] timer tick
+2024-11-20 15:03:24.661314 [info] timer tick
+2024-11-20 15:03:26.661703 [info] timer tick
+2024-11-20 15:03:28.662133 [info] timer tick
+2024-11-20 15:03:30.662480 [info] timer tick
+2024-11-20 15:03:32.662663 [info] timer tick
+2024-11-20 15:03:34.663042 [info] timer tick
+2024-11-20 15:03:36.663581 [info] timer tick
+2024-11-20 15:03:38.663973 [info] timer tick
+2024-11-20 15:04:38.844174 [info] establish log successfully!
+2024-11-20 15:04:38.868582 [debug] mysql connection initialization succeed
+2024-11-20 15:04:38.868766 [info] establish MYSQL connection pool successfully!
+2024-11-20 15:04:38.869332 [info] establish threadpool successfully!

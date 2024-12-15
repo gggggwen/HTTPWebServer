@@ -1,0 +1,692 @@
+2024-12-15 20:25:55.777691 [info] establish log successfully!
+2024-12-15 20:25:55.797089 [info] establish MYSQL connection pool successfully!
+2024-12-15 20:25:55.797488 [info] establish threadpool successfully!
+2024-12-15 20:25:55.797531 [info] establish timer manager successfully!
+2024-12-15 20:57:39.581335 [info] establish log successfully!
+2024-12-15 20:57:39.601200 [info] establish MYSQL connection pool successfully!
+2024-12-15 20:57:39.601686 [info] establish threadpool successfully!
+2024-12-15 20:57:39.601746 [info] establish timer manager successfully!
+2024-12-15 20:57:42.602677 [info] timer tick
+2024-12-15 20:57:43.952054 [info] new connection established !
+2024-12-15 20:57:43.952144 [info] new connection established !
+2024-12-15 20:57:43.961131 [info] the sockfd 16 method POST 
+2024-12-15 20:57:43.961222 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 20:57:43.961323 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 20:57:43.961781 [info] A write event need to be done in sockfd 16
+2024-12-15 20:57:43.961951 [info] the file ../src/register.html will be send to client
+2024-12-15 20:57:44.97032 [info] the sockfd 16 method GET 
+2024-12-15 20:57:44.97097 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 20:57:44.97187 [info] A write event need to be done in sockfd 16
+2024-12-15 20:57:44.97370 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 20:57:45.603066 [info] timer tick
+2024-12-15 20:57:48.603973 [info] timer tick
+2024-12-15 20:57:51.606708 [info] timer tick
+2024-12-15 20:57:54.607152 [info] timer tick
+2024-12-15 20:57:57.607691 [info] timer tick
+2024-12-15 20:58:00.608173 [info] timer tick
+2024-12-15 20:58:03.608889 [info] timer tick
+2024-12-15 20:58:06.609885 [info] timer tick
+2024-12-15 20:58:09.610085 [info] timer tick
+2024-12-15 20:58:12.611330 [info] timer tick
+2024-12-15 20:58:15.611553 [info] timer tick
+2024-12-15 20:58:18.612574 [info] timer tick
+2024-12-15 20:58:21.612629 [info] timer tick
+2024-12-15 20:58:44.341581 [info] establish log successfully!
+2024-12-15 20:58:44.361264 [info] establish MYSQL connection pool successfully!
+2024-12-15 20:58:44.361897 [info] establish threadpool successfully!
+2024-12-15 20:58:44.361954 [info] establish timer manager successfully!
+2024-12-15 20:58:47.362601 [info] timer tick
+2024-12-15 20:58:48.783094 [info] new connection established !
+2024-12-15 20:58:48.783187 [info] new connection established !
+2024-12-15 20:58:48.816141 [info] the sockfd 16 method POST 
+2024-12-15 20:58:48.816210 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 20:58:48.816248 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 20:58:48.816663 [info] A write event need to be done in sockfd 16
+2024-12-15 20:58:48.816873 [info] the file ../src/register.html will be send to client
+2024-12-15 20:58:48.952792 [info] the sockfd 16 method GET 
+2024-12-15 20:58:48.952860 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 20:58:48.952998 [info] A write event need to be done in sockfd 16
+2024-12-15 20:58:48.953241 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 20:58:50.362958 [info] timer tick
+2024-12-15 20:58:53.366061 [info] timer tick
+2024-12-15 20:58:56.366304 [info] timer tick
+2024-12-15 20:58:59.367503 [info] timer tick
+2024-12-15 20:59:02.367873 [info] timer tick
+2024-12-15 20:59:05.368126 [info] timer tick
+2024-12-15 20:59:08.368564 [info] timer tick
+2024-12-15 21:01:58.518588 [info] establish log successfully!
+2024-12-15 21:01:58.533083 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:01:58.533505 [info] establish threadpool successfully!
+2024-12-15 21:01:58.533574 [info] establish timer manager successfully!
+2024-12-15 21:02:01.535178 [info] timer tick
+2024-12-15 21:02:02.507683 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:02:02.507758 [info] new connection established !
+2024-12-15 21:02:02.507774 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:02:02.507788 [info] new connection established !
+2024-12-15 21:02:02.526895 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:02:02.526975 [info] the sockfd 16 method POST 
+2024-12-15 21:02:02.527011 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:02:02.527045 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:02:02.527056 [info] A write event need to be done in sockfd 16
+2024-12-15 21:02:02.527136 [info] the file ../src/register.html will be send to client
+2024-12-15 21:02:02.527170 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:02:02.667037 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:02:02.667235 [info] the sockfd 16 method GET 
+2024-12-15 21:02:02.667285 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:02:02.667365 [info] A write event need to be done in sockfd 16
+2024-12-15 21:02:02.667557 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:02:02.668262 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:02:04.540280 [info] timer tick
+2024-12-15 21:02:07.540609 [info] timer tick
+2024-12-15 21:02:10.541281 [info] timer tick
+2024-12-15 21:02:13.541800 [info] timer tick
+2024-12-15 21:02:16.542030 [info] timer tick
+2024-12-15 21:02:19.543653 [info] timer tick
+2024-12-15 21:02:22.544659 [info] timer tick
+2024-12-15 21:02:25.545421 [info] timer tick
+2024-12-15 21:02:28.546638 [info] timer tick
+2024-12-15 21:02:31.546988 [info] timer tick
+2024-12-15 21:02:34.547936 [info] timer tick
+2024-12-15 21:02:37.548090 [info] timer tick
+2024-12-15 21:02:40.548443 [info] timer tick
+2024-12-15 21:02:43.548597 [info] timer tick
+2024-12-15 21:02:46.549466 [info] timer tick
+2024-12-15 21:02:49.549656 [info] timer tick
+2024-12-15 21:02:52.550038 [info] timer tick
+2024-12-15 21:02:55.550344 [info] timer tick
+2024-12-15 21:02:58.550594 [info] timer tick
+2024-12-15 21:03:01.550698 [info] timer tick
+2024-12-15 21:03:04.551061 [info] timer tick
+2024-12-15 21:03:07.551359 [info] timer tick
+2024-12-15 21:03:10.552129 [info] timer tick
+2024-12-15 21:03:13.554860 [info] timer tick
+2024-12-15 21:03:16.555234 [info] timer tick
+2024-12-15 21:03:19.555847 [info] timer tick
+2024-12-15 21:03:22.556322 [info] timer tick
+2024-12-15 21:03:25.556660 [info] timer tick
+2024-12-15 21:03:28.556799 [info] timer tick
+2024-12-15 21:03:31.557188 [info] timer tick
+2024-12-15 21:03:34.558152 [info] timer tick
+2024-12-15 21:03:37.559805 [info] timer tick
+2024-12-15 21:03:40.560296 [info] timer tick
+2024-12-15 21:03:43.560591 [info] timer tick
+2024-12-15 21:03:46.560853 [info] timer tick
+2024-12-15 21:03:49.561340 [info] timer tick
+2024-12-15 21:03:52.561494 [info] timer tick
+2024-12-15 21:03:55.564046 [info] timer tick
+2024-12-15 21:03:58.565048 [info] timer tick
+2024-12-15 21:04:01.567474 [info] timer tick
+2024-12-15 21:04:04.569427 [info] timer tick
+2024-12-15 21:04:07.569775 [info] timer tick
+2024-12-15 21:04:10.569945 [info] timer tick
+2024-12-15 21:04:13.570568 [info] timer tick
+2024-12-15 21:04:16.571116 [info] timer tick
+2024-12-15 21:04:19.577743 [info] timer tick
+2024-12-15 21:04:22.580579 [info] timer tick
+2024-12-15 21:04:25.580851 [info] timer tick
+2024-12-15 21:04:28.582106 [info] timer tick
+2024-12-15 21:04:31.582229 [info] timer tick
+2024-12-15 21:04:34.582412 [info] timer tick
+2024-12-15 21:04:37.583383 [info] timer tick
+2024-12-15 21:04:40.583543 [info] timer tick
+2024-12-15 21:04:43.584944 [info] timer tick
+2024-12-15 21:04:46.586006 [info] timer tick
+2024-12-15 21:04:49.586138 [info] timer tick
+2024-12-15 21:04:52.587091 [info] timer tick
+2024-12-15 21:04:55.587354 [info] timer tick
+2024-12-15 21:04:58.588738 [info] timer tick
+2024-12-15 21:05:01.588931 [info] timer tick
+2024-12-15 21:05:04.589119 [info] timer tick
+2024-12-15 21:05:07.592735 [info] timer tick
+2024-12-15 21:05:10.592861 [info] timer tick
+2024-12-15 21:05:13.593464 [info] timer tick
+2024-12-15 21:05:16.594798 [info] timer tick
+2024-12-15 21:05:19.598254 [info] timer tick
+2024-12-15 21:05:22.598975 [info] timer tick
+2024-12-15 21:05:25.599966 [info] timer tick
+2024-12-15 21:05:28.600139 [info] timer tick
+2024-12-15 21:05:31.600751 [info] timer tick
+2024-12-15 21:05:34.602347 [info] timer tick
+2024-12-15 21:05:37.602576 [info] timer tick
+2024-12-15 21:05:40.603125 [info] timer tick
+2024-12-15 21:05:43.603773 [info] timer tick
+2024-12-15 21:05:46.604609 [info] timer tick
+2024-12-15 21:05:49.605050 [info] timer tick
+2024-12-15 21:05:52.605318 [info] timer tick
+2024-12-15 21:05:55.606859 [info] timer tick
+2024-12-15 21:05:58.607509 [info] timer tick
+2024-12-15 21:06:01.607764 [info] timer tick
+2024-12-15 21:16:04.441013 [info] establish log successfully!
+2024-12-15 21:16:04.465871 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:16:04.466841 [info] establish threadpool successfully!
+2024-12-15 21:16:04.466878 [info] establish timer manager successfully!
+2024-12-15 21:17:42.640961 [info] establish log successfully!
+2024-12-15 21:17:42.664023 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:17:42.664951 [info] establish threadpool successfully!
+2024-12-15 21:17:42.665066 [info] establish timer manager successfully!
+2024-12-15 21:18:24.449417 [info] establish log successfully!
+2024-12-15 21:18:24.471206 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:18:24.471930 [info] establish threadpool successfully!
+2024-12-15 21:18:24.472005 [info] establish timer manager successfully!
+2024-12-15 21:20:14.469790 [info] establish log successfully!
+2024-12-15 21:20:14.499728 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:20:14.500342 [info] establish threadpool successfully!
+2024-12-15 21:20:14.500392 [info] establish timer manager successfully!
+2024-12-15 21:20:51.599558 [info] establish log successfully!
+2024-12-15 21:20:51.626087 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:20:51.627146 [info] establish threadpool successfully!
+2024-12-15 21:20:51.627226 [info] establish timer manager successfully!
+2024-12-15 21:22:40.896992 [info] establish log successfully!
+2024-12-15 21:22:40.932317 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:22:40.933154 [info] establish threadpool successfully!
+2024-12-15 21:22:40.933271 [info] establish timer manager successfully!
+2024-12-15 21:22:43.934558 [info] timer tick
+2024-12-15 21:22:46.934864 [info] timer tick
+2024-12-15 21:22:49.936977 [info] timer tick
+2024-12-15 21:22:52.937219 [info] timer tick
+2024-12-15 21:22:55.937671 [info] timer tick
+2024-12-15 21:22:57.430419 [info] Timer of sockfd:16 will be inserted into the 4th slot 
+2024-12-15 21:22:57.430572 [info] new connection established !
+2024-12-15 21:22:57.430610 [info] Timer of sockfd:17 will be inserted into the 4th slot 
+2024-12-15 21:22:57.430641 [info] new connection established !
+2024-12-15 21:22:57.431060 [info] Timer of sockfd:16 will be inserted into the 4th slot 
+2024-12-15 21:22:57.431349 [info] the sockfd 16 method POST 
+2024-12-15 21:22:57.431515 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:22:57.431778 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:22:57.431896 [info] A write event need to be done in sockfd 16
+2024-12-15 21:22:57.432218 [info] the file ../src/register.html will be send to client
+2024-12-15 21:22:57.432413 [info] Timer of sockfd:16 will be inserted into the 4th slot 
+2024-12-15 21:22:57.632280 [info] Timer of sockfd:16 will be inserted into the 4th slot 
+2024-12-15 21:22:57.632735 [info] the sockfd 16 method GET 
+2024-12-15 21:22:57.632832 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:22:57.633081 [info] A write event need to be done in sockfd 16
+2024-12-15 21:22:57.633502 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:22:57.636742 [info] Timer of sockfd:16 will be inserted into the 4th slot 
+2024-12-15 21:22:58.939697 [info] timer tick
+2024-12-15 21:23:01.940104 [info] timer tick
+2024-12-15 21:23:04.940743 [info] timer tick
+2024-12-15 21:23:07.941243 [info] timer tick
+2024-12-15 21:23:10.941849 [info] timer tick
+2024-12-15 21:23:13.942796 [info] timer tick
+2024-12-15 21:23:16.944226 [info] timer tick
+2024-12-15 21:23:19.945559 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:23:19.945817 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:23:19.945875 [info] timer tick
+2024-12-15 21:23:22.946538 [info] timer tick
+2024-12-15 21:23:25.948886 [info] timer tick
+2024-12-15 21:23:28.949204 [info] timer tick
+2024-12-15 21:23:31.873312 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:23:31.873421 [info] new connection established !
+2024-12-15 21:23:31.873439 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:23:31.873452 [info] new connection established !
+2024-12-15 21:23:31.873530 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:23:31.873671 [info] the sockfd 16 method POST 
+2024-12-15 21:23:31.873731 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:23:31.873798 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:23:31.873826 [info] A write event need to be done in sockfd 16
+2024-12-15 21:23:31.874066 [info] the file ../src/register.html will be send to client
+2024-12-15 21:23:31.874180 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:23:31.953431 [info] timer tick
+2024-12-15 21:23:32.24994 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:23:32.25138 [info] the sockfd 16 method GET 
+2024-12-15 21:23:32.25161 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:23:32.25231 [info] A write event need to be done in sockfd 16
+2024-12-15 21:23:32.25418 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:23:32.26782 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:23:34.954777 [info] timer tick
+2024-12-15 21:23:37.955630 [info] timer tick
+2024-12-15 21:23:40.956211 [info] timer tick
+2024-12-15 21:23:43.956485 [info] timer tick
+2024-12-15 21:23:46.957230 [info] timer tick
+2024-12-15 21:23:49.959018 [info] timer tick
+2024-12-15 21:23:52.961809 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:23:52.961852 [info] timer tick
+2024-12-15 21:23:55.963030 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:25:36.616717 [info] establish log successfully!
+2024-12-15 21:25:36.654304 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:25:36.654889 [info] establish threadpool successfully!
+2024-12-15 21:25:36.654994 [info] establish timer manager successfully!
+2024-12-15 21:25:39.657584 [info] timer tick
+2024-12-15 21:25:41.128729 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:25:41.128833 [info] new connection established !
+2024-12-15 21:25:41.128857 [info] Timer of sockfd:17 will be inserted into the 0th slot 
+2024-12-15 21:25:41.128877 [info] new connection established !
+2024-12-15 21:25:41.176745 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:25:41.177704 [info] the sockfd 16 method POST 
+2024-12-15 21:25:41.177803 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:25:41.177846 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:25:41.178266 [info] A write event need to be done in sockfd 16
+2024-12-15 21:25:41.178485 [info] the file ../src/register.html will be send to client
+2024-12-15 21:25:41.178806 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:25:41.352954 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:25:41.353206 [info] the sockfd 16 method GET 
+2024-12-15 21:25:41.353246 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:25:41.353352 [info] A write event need to be done in sockfd 16
+2024-12-15 21:25:41.353687 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:25:41.360479 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:25:42.657952 [info] timer tick
+2024-12-15 21:25:45.659162 [info] timer tick
+2024-12-15 21:25:48.660590 [info] timer tick
+2024-12-15 21:25:51.660835 [info] timer tick
+2024-12-15 21:25:54.664467 [info] timer tick
+2024-12-15 21:25:57.666193 [info] timer tick
+2024-12-15 21:26:00.666467 [info] timer tick
+2024-12-15 21:26:03.667370 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:27:47.822110 [info] establish log successfully!
+2024-12-15 21:27:47.842050 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:27:47.842734 [info] establish threadpool successfully!
+2024-12-15 21:27:47.842811 [info] establish timer manager successfully!
+2024-12-15 21:27:49.846734 [info] timer tick
+2024-12-15 21:27:51.847614 [info] timer tick
+2024-12-15 21:27:53.848519 [info] timer tick
+2024-12-15 21:27:55.848918 [info] timer tick
+2024-12-15 21:27:57.445155 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:27:57.445260 [info] new connection established !
+2024-12-15 21:27:57.445292 [info] Timer of sockfd:17 will be inserted into the 0th slot 
+2024-12-15 21:27:57.445317 [info] new connection established !
+2024-12-15 21:27:57.485661 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:27:57.485929 [info] the sockfd 16 method POST 
+2024-12-15 21:27:57.486046 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:27:57.486138 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:27:57.486182 [info] A write event need to be done in sockfd 16
+2024-12-15 21:27:57.486788 [info] the file ../src/register.html will be send to client
+2024-12-15 21:27:57.487110 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:27:57.818623 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:27:57.818744 [info] the sockfd 16 method GET 
+2024-12-15 21:27:57.818756 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:27:57.818794 [info] A write event need to be done in sockfd 16
+2024-12-15 21:27:57.818902 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:27:57.820125 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:27:57.849124 [info] timer tick
+2024-12-15 21:27:59.850210 [info] timer tick
+2024-12-15 21:28:01.851045 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:01.851601 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:21.906949 [info] establish log successfully!
+2024-12-15 21:28:22.55866 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:28:22.69421 [info] establish threadpool successfully!
+2024-12-15 21:28:22.92235 [info] establish timer manager successfully!
+2024-12-15 21:28:24.115683 [info] timer tick
+2024-12-15 21:28:26.125699 [info] timer tick
+2024-12-15 21:28:28.127444 [info] timer tick
+2024-12-15 21:28:28.625280 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:28.625386 [info] new connection established !
+2024-12-15 21:28:28.625571 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:28:28.626229 [info] new connection established !
+2024-12-15 21:28:28.626901 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:28.627040 [info] the sockfd 16 method POST 
+2024-12-15 21:28:28.627087 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:28:28.627123 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:28:28.627845 [info] A write event need to be done in sockfd 16
+2024-12-15 21:28:28.630943 [info] the file ../src/register.html will be send to client
+2024-12-15 21:28:28.651979 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:28.782388 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:28.784203 [info] the sockfd 16 method GET 
+2024-12-15 21:28:28.784255 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:28:28.784763 [info] A write event need to be done in sockfd 16
+2024-12-15 21:28:28.787817 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:28:28.811921 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:30.132134 [info] timer tick
+2024-12-15 21:28:32.139510 [info] timer tick
+2024-12-15 21:28:34.145147 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:34.159972 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:34.168988 [info] timer tick
+2024-12-15 21:28:36.169815 [info] timer tick
+2024-12-15 21:28:38.170508 [info] timer tick
+2024-12-15 21:28:40.171856 [info] timer tick
+2024-12-15 21:28:42.173492 [info] timer tick
+2024-12-15 21:28:44.179679 [info] timer tick
+2024-12-15 21:28:46.181045 [info] timer tick
+2024-12-15 21:28:47.312457 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:47.312908 [info] new connection established !
+2024-12-15 21:28:47.313272 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:28:47.313807 [info] new connection established !
+2024-12-15 21:28:47.315105 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:47.322491 [info] the sockfd 16 method POST 
+2024-12-15 21:28:47.322571 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:28:47.322615 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:28:47.323301 [info] A write event need to be done in sockfd 16
+2024-12-15 21:28:47.353152 [info] the file ../src/register.html will be send to client
+2024-12-15 21:28:47.354010 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:47.711936 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:47.714254 [info] the sockfd 16 method GET 
+2024-12-15 21:28:47.714352 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:28:47.714993 [info] A write event need to be done in sockfd 16
+2024-12-15 21:28:47.715388 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:28:47.726552 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:28:48.185302 [info] timer tick
+2024-12-15 21:28:50.186548 [info] timer tick
+2024-12-15 21:28:52.191052 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:52.191940 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:28:52.194702 [info] timer tick
+2024-12-15 21:28:54.195865 [info] timer tick
+2024-12-15 21:28:56.199499 [info] timer tick
+2024-12-15 21:28:58.200891 [info] timer tick
+2024-12-15 21:29:00.202721 [info] timer tick
+2024-12-15 21:29:02.210712 [info] timer tick
+2024-12-15 21:29:08.974760 [info] establish log successfully!
+2024-12-15 21:29:09.11088 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:29:09.11572 [info] establish threadpool successfully!
+2024-12-15 21:29:09.11624 [info] establish timer manager successfully!
+2024-12-15 21:29:11.12211 [info] timer tick
+2024-12-15 21:29:12.900040 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:29:12.900294 [info] new connection established !
+2024-12-15 21:29:12.900340 [info] Timer of sockfd:17 will be inserted into the 0th slot 
+2024-12-15 21:29:12.900371 [info] new connection established !
+2024-12-15 21:29:12.930443 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:29:12.930719 [info] the sockfd 16 method POST 
+2024-12-15 21:29:12.930775 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:29:12.930829 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:29:12.931042 [info] A write event need to be done in sockfd 16
+2024-12-15 21:29:12.931155 [info] the file ../src/register.html will be send to client
+2024-12-15 21:29:12.931498 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:29:13.16009 [info] timer tick
+2024-12-15 21:29:13.108388 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:29:13.108751 [info] the sockfd 16 method GET 
+2024-12-15 21:29:13.108790 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:29:13.110024 [info] A write event need to be done in sockfd 16
+2024-12-15 21:29:13.110150 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:29:13.110882 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:29:15.19977 [info] timer tick
+2024-12-15 21:32:26.169992 [info] establish log successfully!
+2024-12-15 21:32:26.248083 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:32:26.272620 [info] establish threadpool successfully!
+2024-12-15 21:32:26.274297 [info] establish timer manager successfully!
+2024-12-15 21:32:28.354372 [info] timer tick
+2024-12-15 21:32:30.363458 [info] timer tick
+2024-12-15 21:32:32.366116 [info] timer tick
+2024-12-15 21:32:33.953221 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:32:33.955586 [info] new connection established !
+2024-12-15 21:32:33.955787 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:32:33.955824 [info] new connection established !
+2024-12-15 21:32:33.956191 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:32:33.956610 [info] the sockfd 16 method POST 
+2024-12-15 21:32:33.956787 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:32:33.956895 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:32:33.957799 [info] A write event need to be done in sockfd 16
+2024-12-15 21:32:33.959325 [info] the file ../src/register.html will be send to client
+2024-12-15 21:32:33.984646 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:32:34.118658 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:32:34.120205 [info] the sockfd 16 method GET 
+2024-12-15 21:32:34.120266 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:32:34.120539 [info] A write event need to be done in sockfd 16
+2024-12-15 21:32:34.124249 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:32:34.140720 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:32:34.383906 [info] timer tick
+2024-12-15 21:32:36.386788 [info] timer tick
+2024-12-15 21:32:38.390159 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:32:38.395962 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:32:38.397575 [info] timer tick
+2024-12-15 21:32:40.400712 [info] timer tick
+2024-12-15 21:32:42.405846 [info] timer tick
+2024-12-15 21:32:44.409098 [info] timer tick
+2024-12-15 21:32:46.411090 [info] timer tick
+2024-12-15 21:32:48.411955 [info] timer tick
+2024-12-15 21:32:50.416035 [info] timer tick
+2024-12-15 21:32:52.417682 [info] timer tick
+2024-12-15 21:34:15.386457 [info] establish log successfully!
+2024-12-15 21:34:16.62771 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:34:16.161617 [info] establish threadpool successfully!
+2024-12-15 21:34:16.200462 [info] establish timer manager successfully!
+2024-12-15 21:34:18.248276 [info] timer tick
+2024-12-15 21:34:20.250359 [info] timer tick
+2024-12-15 21:34:20.457122 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:34:20.499032 [info] new connection established !
+2024-12-15 21:34:20.501058 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:34:20.509693 [info] new connection established !
+2024-12-15 21:34:20.541023 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:34:20.583442 [info] the sockfd 17 method POST 
+2024-12-15 21:34:20.607958 [info] the sockfd 17 connection state KEEP-ALIVE 
+2024-12-15 21:34:20.637066 [info] the sockfd 17 response file ../src/register.html
+2024-12-15 21:34:20.675927 [info] A write event need to be done in sockfd 17
+2024-12-15 21:34:20.684172 [info] the file ../src/register.html will be send to client
+2024-12-15 21:34:20.695303 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:34:20.828203 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:34:20.832933 [info] the sockfd 17 method GET 
+2024-12-15 21:34:20.833662 [info] the sockfd 17 connection state KEEP-ALIVE 
+2024-12-15 21:34:20.835717 [info] A write event need to be done in sockfd 17
+2024-12-15 21:34:20.836013 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:34:20.838479 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:34:22.251659 [info] timer tick
+2024-12-15 21:34:24.255950 [info] timer tick
+2024-12-15 21:34:26.287280 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:34:26.291417 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:34:26.292605 [info] timer tick
+2024-12-15 21:34:28.293919 [info] timer tick
+2024-12-15 21:34:30.302635 [info] timer tick
+2024-12-15 21:38:25.403141 [info] establish log successfully!
+2024-12-15 21:38:25.424931 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:38:25.425483 [info] establish threadpool successfully!
+2024-12-15 21:38:25.425542 [info] establish timer manager successfully!
+2024-12-15 21:38:27.426604 [info] timer tick
+2024-12-15 21:38:29.427099 [info] timer tick
+2024-12-15 21:38:29.649449 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:38:29.649592 [info] new connection established !
+2024-12-15 21:38:29.649607 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:38:29.649621 [info] new connection established !
+2024-12-15 21:38:29.649915 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:38:29.652583 [info] the sockfd 16 method POST 
+2024-12-15 21:38:29.652679 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:38:29.652805 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:38:29.653117 [info] A write event need to be done in sockfd 16
+2024-12-15 21:38:29.653485 [info] the file ../src/register.html will be send to client
+2024-12-15 21:38:29.653787 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:38:29.841004 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:38:29.841301 [info] the sockfd 16 method GET 
+2024-12-15 21:38:29.841333 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:38:29.841391 [info] A write event need to be done in sockfd 16
+2024-12-15 21:38:29.841565 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:38:29.841846 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:38:31.427412 [info] timer tick
+2024-12-15 21:38:33.428739 [info] timer tick
+2024-12-15 21:38:35.429719 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:38:35.430091 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:38:35.430128 [info] timer tick
+2024-12-15 21:38:37.430838 [info] timer tick
+2024-12-15 21:38:39.431464 [info] timer tick
+2024-12-15 21:38:41.432477 [info] timer tick
+2024-12-15 21:38:43.433078 [info] timer tick
+2024-12-15 21:38:45.433556 [info] timer tick
+2024-12-15 21:38:45.497711 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:38:45.497851 [info] new connection established !
+2024-12-15 21:38:45.497887 [info] Timer of sockfd:17 will be inserted into the 0th slot 
+2024-12-15 21:38:45.497915 [info] new connection established !
+2024-12-15 21:38:45.500193 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:38:45.500782 [info] the sockfd 16 method POST 
+2024-12-15 21:38:45.500879 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:38:45.500928 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:38:45.501095 [info] A write event need to be done in sockfd 16
+2024-12-15 21:38:45.501408 [info] the file ../src/register.html will be send to client
+2024-12-15 21:38:45.501575 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:38:45.697504 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:38:45.697680 [info] the sockfd 16 method GET 
+2024-12-15 21:38:45.697761 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:38:45.698528 [info] A write event need to be done in sockfd 16
+2024-12-15 21:38:45.698788 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:38:45.700792 [info] Timer of sockfd:16 will be inserted into the 0th slot 
+2024-12-15 21:38:47.435996 [info] timer tick
+2024-12-15 21:39:47.118557 [info] establish log successfully!
+2024-12-15 21:39:47.138270 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:39:47.138895 [info] establish threadpool successfully!
+2024-12-15 21:39:47.138961 [info] establish timer manager successfully!
+2024-12-15 21:39:49.140222 [info] timer tick
+2024-12-15 21:39:51.140679 [info] timer tick
+2024-12-15 21:39:51.511187 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:39:51.511278 [info] new connection established !
+2024-12-15 21:39:51.511290 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:39:51.511301 [info] new connection established !
+2024-12-15 21:39:51.511696 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:39:51.511769 [info] the sockfd 16 method POST 
+2024-12-15 21:39:51.511836 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:39:51.511905 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:39:51.511931 [info] A write event need to be done in sockfd 16
+2024-12-15 21:39:51.512057 [info] the file ../src/register.html will be send to client
+2024-12-15 21:39:51.512162 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:39:51.653418 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:39:51.654686 [info] the sockfd 16 method GET 
+2024-12-15 21:39:51.654726 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:39:51.654996 [info] A write event need to be done in sockfd 16
+2024-12-15 21:39:51.655116 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:39:51.655728 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:39:53.141583 [info] timer tick
+2024-12-15 21:39:55.142519 [info] timer tick
+2024-12-15 21:39:57.143950 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:39:57.144333 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:39:57.144399 [info] timer tick
+2024-12-15 21:39:59.147329 [info] timer tick
+2024-12-15 21:40:01.150007 [info] timer tick
+2024-12-15 21:40:03.150849 [info] timer tick
+2024-12-15 21:40:05.151319 [info] timer tick
+2024-12-15 21:40:07.162712 [info] timer tick
+2024-12-15 21:40:09.164656 [info] timer tick
+2024-12-15 21:40:09.904068 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:09.904145 [info] new connection established !
+2024-12-15 21:40:09.904154 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:40:09.904161 [info] new connection established !
+2024-12-15 21:40:09.904837 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:09.905023 [info] the sockfd 16 method POST 
+2024-12-15 21:40:09.905157 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:09.905238 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:40:09.905292 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:09.905542 [info] the file ../src/register.html will be send to client
+2024-12-15 21:40:09.905711 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:10.55627 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:10.56562 [info] the sockfd 16 method GET 
+2024-12-15 21:40:10.56636 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:10.56789 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:10.56998 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:40:10.58615 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:11.165209 [info] timer tick
+2024-12-15 21:40:13.167040 [info] timer tick
+2024-12-15 21:40:15.168188 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:15.168317 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:15.168344 [info] timer tick
+2024-12-15 21:40:17.168595 [info] timer tick
+2024-12-15 21:40:19.169148 [info] timer tick
+2024-12-15 21:40:21.173174 [info] timer tick
+2024-12-15 21:40:23.173801 [info] timer tick
+2024-12-15 21:40:25.177238 [info] timer tick
+2024-12-15 21:40:41.596681 [info] establish log successfully!
+2024-12-15 21:40:41.622053 [info] establish MYSQL connection pool successfully!
+2024-12-15 21:40:41.622533 [info] establish threadpool successfully!
+2024-12-15 21:40:41.622620 [info] establish timer manager successfully!
+2024-12-15 21:40:43.624977 [info] timer tick
+2024-12-15 21:40:45.625731 [info] timer tick
+2024-12-15 21:40:47.516821 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:47.516946 [info] new connection established !
+2024-12-15 21:40:47.516990 [info] Timer of sockfd:17 will be inserted into the 2th slot 
+2024-12-15 21:40:47.517027 [info] new connection established !
+2024-12-15 21:40:47.556141 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:47.557779 [info] the sockfd 16 method POST 
+2024-12-15 21:40:47.557861 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:47.557918 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:40:47.558673 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:47.558990 [info] the file ../src/register.html will be send to client
+2024-12-15 21:40:47.560229 [info] Timer of sockfd:16 will be inserted into the 2th slot 
+2024-12-15 21:40:47.626288 [info] timer tick
+2024-12-15 21:40:47.723390 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:47.723776 [info] the sockfd 16 method GET 
+2024-12-15 21:40:47.723799 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:47.723895 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:47.724104 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:40:47.729711 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:49.626796 [info] timer tick
+2024-12-15 21:40:51.652233 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:51.652277 [info] timer tick
+2024-12-15 21:40:53.654171 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:53.654296 [info] timer tick
+2024-12-15 21:40:54.997492 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:54.997549 [info] new connection established !
+2024-12-15 21:40:54.997557 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:40:54.997563 [info] new connection established !
+2024-12-15 21:40:55.26205 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:55.26591 [info] the sockfd 16 method POST 
+2024-12-15 21:40:55.26743 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:55.26809 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:40:55.27289 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:55.27526 [info] the file ../src/register.html will be send to client
+2024-12-15 21:40:55.28344 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:55.186993 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:55.187322 [info] the sockfd 16 method GET 
+2024-12-15 21:40:55.187441 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:40:55.187886 [info] A write event need to be done in sockfd 16
+2024-12-15 21:40:55.188234 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:40:55.189296 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:40:55.655586 [info] timer tick
+2024-12-15 21:40:57.655909 [info] timer tick
+2024-12-15 21:40:59.656574 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:59.656877 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:40:59.656923 [info] timer tick
+2024-12-15 21:41:01.658433 [info] timer tick
+2024-12-15 21:41:03.660548 [info] timer tick
+2024-12-15 21:41:05.661626 [info] timer tick
+2024-12-15 21:41:06.201550 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:06.201698 [info] new connection established !
+2024-12-15 21:41:06.201719 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:41:06.201742 [info] new connection established !
+2024-12-15 21:41:06.243598 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:06.243676 [info] the sockfd 16 method POST 
+2024-12-15 21:41:06.243770 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:06.243836 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:41:06.246323 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:06.246510 [info] the file ../src/register.html will be send to client
+2024-12-15 21:41:06.246594 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:06.419053 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:06.419221 [info] the sockfd 16 method GET 
+2024-12-15 21:41:06.419260 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:06.419379 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:06.419578 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:41:06.421227 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:07.669015 [info] timer tick
+2024-12-15 21:41:09.669707 [info] timer tick
+2024-12-15 21:41:11.670346 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:41:11.670866 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:41:11.670916 [info] timer tick
+2024-12-15 21:41:13.676393 [info] timer tick
+2024-12-15 21:41:15.676850 [info] timer tick
+2024-12-15 21:41:17.677287 [info] timer tick
+2024-12-15 21:41:18.318344 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:18.318475 [info] new connection established !
+2024-12-15 21:41:18.318510 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:41:18.318538 [info] new connection established !
+2024-12-15 21:41:18.319979 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:18.320071 [info] the sockfd 16 method POST 
+2024-12-15 21:41:18.320147 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:18.320220 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:41:18.320317 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:18.320531 [info] the file ../src/register.html will be send to client
+2024-12-15 21:41:18.320693 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:18.471282 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:18.471436 [info] the sockfd 16 method GET 
+2024-12-15 21:41:18.471462 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:18.471671 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:18.471896 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:41:18.474082 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:19.677541 [info] timer tick
+2024-12-15 21:41:21.678244 [info] timer tick
+2024-12-15 21:41:23.681030 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:41:23.681375 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:41:23.681432 [info] timer tick
+2024-12-15 21:41:25.689239 [info] timer tick
+2024-12-15 21:41:27.691627 [info] timer tick
+2024-12-15 21:41:29.692658 [info] timer tick
+2024-12-15 21:41:30.415905 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:30.416023 [info] new connection established !
+2024-12-15 21:41:30.416128 [info] Timer of sockfd:17 will be inserted into the 1th slot 
+2024-12-15 21:41:30.416166 [info] new connection established !
+2024-12-15 21:41:30.444010 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:30.444058 [info] the sockfd 16 method POST 
+2024-12-15 21:41:30.444071 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:30.444099 [info] the sockfd 16 response file ../src/register.html
+2024-12-15 21:41:30.444130 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:30.444200 [info] the file ../src/register.html will be send to client
+2024-12-15 21:41:30.444269 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:30.604176 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:30.604367 [info] the sockfd 16 method GET 
+2024-12-15 21:41:30.604406 [info] the sockfd 16 connection state KEEP-ALIVE 
+2024-12-15 21:41:30.604614 [info] A write event need to be done in sockfd 16
+2024-12-15 21:41:30.604928 [info] the file ../src/favicon.ico will be send to client
+2024-12-15 21:41:30.606876 [info] Timer of sockfd:16 will be inserted into the 1th slot 
+2024-12-15 21:41:31.694819 [info] timer tick
+2024-12-15 21:41:33.695020 [info] timer tick
+2024-12-15 21:41:35.698851 [error] 有套接字连接已超时, 强制关闭
+2024-12-15 21:41:35.699070 [error] 有套接字连接已超时, 强制关闭

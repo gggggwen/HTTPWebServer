@@ -1,0 +1,269 @@
+2024-11-30 11:18:13.16592 [info] establish log successfully!
+2024-11-30 11:18:13.44493 [info] establish MYSQL connection pool successfully!
+2024-11-30 11:18:13.44830 [info] establish threadpool successfully!
+2024-11-30 11:18:13.44874 [info] establish timer manager successfully!
+2024-11-30 11:18:15.46006 [info] timer tick
+2024-11-30 11:18:17.46200 [info] timer tick
+2024-11-30 11:18:19.48718 [info] timer tick
+2024-11-30 11:18:21.51618 [info] timer tick
+2024-11-30 11:18:21.727650 [info] new connection established !
+2024-11-30 11:18:21.727808 [info] new connection established !
+2024-11-30 11:18:21.979310 [debug] read_offset is %d
+2024-11-30 11:18:21.979453 [debug] read_offset is %d
+2024-11-30 11:18:21.979473 [debug] read_offset is %d
+2024-11-30 11:18:21.979483 [debug] read_offset is %d
+2024-11-30 11:18:21.979492 [debug] read_offset is %d
+2024-11-30 11:18:21.979503 [debug] read_offset is %d
+2024-11-30 11:18:21.979516 [debug] read_offset is %d
+2024-11-30 11:18:21.979525 [debug] read_offset is %d
+2024-11-30 11:18:21.979533 [debug] read_offset is %d
+2024-11-30 11:18:21.979543 [debug] LINE_OPEN
+2024-11-30 11:18:21.979553 [info] parse HTTP request successfully !
+2024-11-30 11:18:21.979606 [info] generate HTTP response successfully !
+2024-11-30 11:18:23.53907 [info] timer tick
+2024-11-30 11:18:24.831219 [debug] read_offset is %d
+2024-11-30 11:18:24.831373 [debug] read_offset is %d
+2024-11-30 11:18:24.831425 [debug] read_offset is %d
+2024-11-30 11:18:24.831901 [debug] read_offset is %d
+2024-11-30 11:18:24.831917 [debug] read_offset is %d
+2024-11-30 11:18:24.831925 [debug] read_offset is %d
+2024-11-30 11:18:24.831933 [debug] read_offset is %d
+2024-11-30 11:18:24.831942 [debug] read_offset is %d
+2024-11-30 11:18:24.831950 [debug] read_offset is %d
+2024-11-30 11:18:24.831958 [debug] read_offset is %d
+2024-11-30 11:18:24.831965 [debug] read_offset is %d
+2024-11-30 11:18:24.831973 [debug] read_offset is %d
+2024-11-30 11:18:24.831980 [debug] read_offset is %d
+2024-11-30 11:18:24.831987 [debug] read_offset is %d
+2024-11-30 11:18:24.831995 [debug] read_offset is %d
+2024-11-30 11:18:24.832002 [debug] read_offset is %d
+2024-11-30 11:18:24.832011 [debug] read_offset is %d
+2024-11-30 11:18:24.832021 [debug] read_offset is %d
+2024-11-30 11:18:24.832031 [debug] read_offset is %d
+2024-11-30 11:18:24.832041 [debug] read_offset is %d
+2024-11-30 11:18:24.832139 [debug] read_offset is %d
+2024-11-30 11:18:24.832156 [debug] LINE_OPEN
+2024-11-30 11:18:24.832165 [info] parse HTTP request successfully !
+2024-11-30 11:18:24.832196 [info] generate HTTP response successfully !
+2024-11-30 11:18:25.54915 [info] timer tick
+2024-11-30 11:18:27.55170 [info] timer tick
+2024-11-30 11:18:29.55417 [info] timer tick
+2024-11-30 11:18:31.56297 [info] timer tick
+2024-11-30 11:18:33.56439 [info] timer tick
+2024-11-30 11:18:35.56668 [info] timer tick
+2024-11-30 11:18:37.57166 [info] timer tick
+2024-11-30 11:18:39.57593 [info] timer tick
+2024-11-30 11:18:41.59379 [info] timer tick
+2024-11-30 11:18:43.59639 [info] timer tick
+2024-11-30 11:18:45.60160 [info] timer tick
+2024-11-30 11:18:47.60831 [info] timer tick
+2024-11-30 11:18:49.61444 [info] timer tick
+2024-11-30 11:18:51.64244 [info] timer tick
+2024-11-30 11:18:53.64557 [info] timer tick
+2024-11-30 11:18:55.64775 [info] timer tick
+2024-11-30 11:18:57.65394 [info] timer tick
+2024-11-30 11:18:59.67043 [info] timer tick
+2024-11-30 11:19:01.68935 [info] timer tick
+2024-11-30 11:19:03.69761 [info] timer tick
+2024-11-30 11:19:05.71493 [info] timer tick
+2024-11-30 11:19:07.71988 [info] timer tick
+2024-11-30 11:19:09.72726 [info] timer tick
+2024-11-30 11:19:11.73243 [info] timer tick
+2024-11-30 11:19:13.74764 [info] timer tick
+2024-11-30 11:19:13.698596 [info] new connection established !
+2024-11-30 11:19:13.698686 [info] new connection established !
+2024-11-30 11:19:13.712235 [debug] read_offset is %d
+2024-11-30 11:19:13.712363 [debug] read_offset is %d
+2024-11-30 11:19:13.712374 [debug] read_offset is %d
+2024-11-30 11:19:13.712382 [debug] read_offset is %d
+2024-11-30 11:19:13.712388 [debug] read_offset is %d
+2024-11-30 11:19:13.712392 [debug] read_offset is %d
+2024-11-30 11:19:13.712396 [debug] read_offset is %d
+2024-11-30 11:19:13.712399 [debug] read_offset is %d
+2024-11-30 11:19:13.712402 [debug] read_offset is %d
+2024-11-30 11:19:13.712406 [debug] read_offset is %d
+2024-11-30 11:19:13.712410 [debug] LINE_OPEN
+2024-11-30 11:19:13.712413 [info] parse HTTP request successfully !
+2024-11-30 11:19:13.712431 [info] generate HTTP response successfully !
+2024-11-30 11:19:13.852465 [debug] read_offset is %d
+2024-11-30 11:19:13.852616 [debug] read_offset is %d
+2024-11-30 11:19:13.852635 [debug] read_offset is %d
+2024-11-30 11:19:13.852645 [debug] read_offset is %d
+2024-11-30 11:19:13.852652 [debug] read_offset is %d
+2024-11-30 11:19:13.852660 [debug] read_offset is %d
+2024-11-30 11:19:13.852667 [debug] read_offset is %d
+2024-11-30 11:19:13.852674 [debug] read_offset is %d
+2024-11-30 11:19:13.852681 [debug] read_offset is %d
+2024-11-30 11:19:13.852687 [debug] LINE_OPEN
+2024-11-30 11:19:13.852694 [info] parse HTTP request successfully !
+2024-11-30 11:19:13.852720 [info] generate HTTP response successfully !
+2024-11-30 11:19:15.158130 [info] timer tick
+2024-11-30 11:19:17.153193 [info] new connection established !
+2024-11-30 11:19:17.153910 [debug] read_offset is %d
+2024-11-30 11:19:17.154007 [debug] read_offset is %d
+2024-11-30 11:19:17.154026 [debug] read_offset is %d
+2024-11-30 11:19:17.154032 [debug] read_offset is %d
+2024-11-30 11:19:17.154036 [debug] read_offset is %d
+2024-11-30 11:19:17.154039 [debug] read_offset is %d
+2024-11-30 11:19:17.154043 [debug] read_offset is %d
+2024-11-30 11:19:17.154046 [debug] read_offset is %d
+2024-11-30 11:19:17.154050 [debug] read_offset is %d
+2024-11-30 11:19:17.154053 [debug] read_offset is %d
+2024-11-30 11:19:17.154056 [debug] read_offset is %d
+2024-11-30 11:19:17.154060 [debug] read_offset is %d
+2024-11-30 11:19:17.154063 [debug] read_offset is %d
+2024-11-30 11:19:17.154067 [debug] read_offset is %d
+2024-11-30 11:19:17.154070 [debug] read_offset is %d
+2024-11-30 11:19:17.154074 [debug] read_offset is %d
+2024-11-30 11:19:17.154077 [debug] read_offset is %d
+2024-11-30 11:19:17.154081 [debug] read_offset is %d
+2024-11-30 11:19:17.154084 [debug] read_offset is %d
+2024-11-30 11:19:17.154087 [debug] read_offset is %d
+2024-11-30 11:19:17.154090 [debug] read_offset is %d
+2024-11-30 11:19:17.154094 [debug] LINE_OPEN
+2024-11-30 11:19:17.154098 [info] parse HTTP request successfully !
+2024-11-30 11:19:17.154115 [info] generate HTTP response successfully !
+2024-11-30 11:19:17.158526 [info] timer tick
+2024-11-30 11:19:19.159234 [info] timer tick
+2024-11-30 11:19:21.161166 [info] timer tick
+2024-11-30 11:19:23.161332 [info] timer tick
+2024-11-30 11:19:25.164451 [info] timer tick
+2024-11-30 11:19:27.165387 [info] timer tick
+2024-11-30 11:19:29.166014 [info] timer tick
+2024-11-30 11:19:31.166195 [info] timer tick
+2024-11-30 11:19:33.166484 [info] timer tick
+2024-11-30 11:19:35.167141 [info] timer tick
+2024-11-30 11:19:37.167514 [info] timer tick
+2024-11-30 11:19:39.169518 [info] timer tick
+2024-11-30 11:19:41.170070 [info] timer tick
+2024-11-30 11:19:43.171069 [info] timer tick
+2024-11-30 11:19:45.171580 [info] timer tick
+2024-11-30 11:19:47.172240 [info] timer tick
+2024-11-30 11:19:49.176044 [info] timer tick
+2024-11-30 11:19:51.176776 [info] timer tick
+2024-11-30 11:19:53.177798 [info] timer tick
+2024-11-30 11:19:55.178630 [info] timer tick
+2024-11-30 11:19:57.178863 [info] timer tick
+2024-11-30 11:19:59.184156 [info] timer tick
+2024-11-30 11:20:01.185682 [info] timer tick
+2024-11-30 11:20:03.186051 [info] timer tick
+2024-11-30 11:20:05.186753 [info] timer tick
+2024-11-30 11:20:07.190279 [info] timer tick
+2024-11-30 11:20:09.190637 [info] timer tick
+2024-11-30 11:20:11.191241 [info] timer tick
+2024-11-30 11:20:13.193376 [info] timer tick
+2024-11-30 11:20:15.196367 [info] timer tick
+2024-11-30 11:20:17.197207 [info] timer tick
+2024-11-30 11:20:19.198193 [info] timer tick
+2024-11-30 11:20:21.198574 [info] timer tick
+2024-11-30 11:20:23.198861 [info] timer tick
+2024-11-30 11:20:25.199504 [info] timer tick
+2024-11-30 11:20:27.206796 [info] timer tick
+2024-11-30 11:20:29.217620 [info] timer tick
+2024-11-30 11:20:31.217825 [info] timer tick
+2024-11-30 11:20:33.222805 [info] timer tick
+2024-11-30 11:20:35.223584 [info] timer tick
+2024-11-30 11:20:37.223782 [info] timer tick
+2024-11-30 11:20:39.228324 [info] timer tick
+2024-11-30 11:20:41.229381 [info] timer tick
+2024-11-30 11:20:43.229894 [info] timer tick
+2024-11-30 11:20:45.230280 [info] timer tick
+2024-11-30 11:20:47.232294 [info] timer tick
+2024-11-30 11:20:49.232607 [info] timer tick
+2024-11-30 11:20:51.233031 [info] timer tick
+2024-11-30 11:20:53.235004 [info] timer tick
+2024-11-30 11:20:55.235524 [info] timer tick
+2024-11-30 11:20:57.236327 [info] timer tick
+2024-11-30 11:20:59.236519 [info] timer tick
+2024-11-30 11:21:01.237069 [info] timer tick
+2024-11-30 11:21:03.237278 [info] timer tick
+2024-11-30 11:21:05.237647 [info] timer tick
+2024-11-30 11:21:07.238240 [info] timer tick
+2024-11-30 11:21:09.238660 [info] timer tick
+2024-11-30 11:21:11.238929 [info] timer tick
+2024-11-30 11:21:13.239936 [info] timer tick
+2024-11-30 11:21:15.240471 [info] timer tick
+2024-11-30 11:21:17.240581 [info] timer tick
+2024-11-30 11:21:19.240792 [info] timer tick
+2024-11-30 11:21:21.241048 [info] timer tick
+2024-11-30 11:21:23.241634 [info] timer tick
+2024-11-30 11:21:25.242165 [info] timer tick
+2024-11-30 11:21:27.242317 [info] timer tick
+2024-11-30 11:21:29.242809 [info] timer tick
+2024-11-30 11:21:31.243135 [info] timer tick
+2024-11-30 11:21:33.243603 [info] timer tick
+2024-11-30 11:21:35.243952 [info] timer tick
+2024-11-30 11:21:37.244216 [info] timer tick
+2024-11-30 11:21:39.244782 [info] timer tick
+2024-11-30 11:21:41.245151 [info] timer tick
+2024-11-30 11:21:43.245429 [info] timer tick
+2024-11-30 11:21:45.245728 [info] timer tick
+2024-11-30 11:21:47.245973 [info] timer tick
+2024-11-30 11:21:49.247108 [info] timer tick
+2024-11-30 11:21:51.247345 [info] timer tick
+2024-11-30 11:21:53.247475 [info] timer tick
+2024-11-30 11:21:55.248175 [info] timer tick
+2024-11-30 11:21:57.248674 [info] timer tick
+2024-11-30 11:21:59.249563 [info] timer tick
+2024-11-30 11:22:01.251335 [info] timer tick
+2024-11-30 11:22:03.251506 [info] timer tick
+2024-11-30 11:22:05.252468 [info] timer tick
+2024-11-30 11:22:07.252749 [info] timer tick
+2024-11-30 11:22:09.253021 [info] timer tick
+2024-11-30 11:22:11.253489 [info] timer tick
+2024-11-30 11:22:13.253593 [info] timer tick
+2024-11-30 11:22:15.253852 [info] timer tick
+2024-11-30 11:22:17.254202 [info] timer tick
+2024-11-30 11:22:19.254554 [info] timer tick
+2024-11-30 11:22:21.254686 [info] timer tick
+2024-11-30 11:22:23.256441 [info] timer tick
+2024-11-30 11:22:25.256638 [info] timer tick
+2024-11-30 11:22:27.256809 [info] timer tick
+2024-11-30 11:22:29.257170 [info] timer tick
+2024-11-30 11:22:31.259941 [info] timer tick
+2024-11-30 11:22:33.260865 [info] timer tick
+2024-11-30 11:22:35.261467 [info] timer tick
+2024-11-30 11:22:37.261952 [info] timer tick
+2024-11-30 11:22:39.262501 [info] timer tick
+2024-11-30 11:22:41.262664 [info] timer tick
+2024-11-30 11:22:43.263244 [info] timer tick
+2024-11-30 11:22:45.263525 [info] timer tick
+2024-11-30 11:22:47.264216 [info] timer tick
+2024-11-30 11:22:49.264443 [info] timer tick
+2024-11-30 11:22:51.265030 [info] timer tick
+2024-11-30 11:22:53.265325 [info] timer tick
+2024-11-30 11:22:55.265853 [info] timer tick
+2024-11-30 11:22:57.266125 [info] timer tick
+2024-11-30 11:22:59.266242 [info] timer tick
+2024-11-30 11:23:01.266774 [info] timer tick
+2024-11-30 11:23:03.267716 [info] timer tick
+2024-11-30 11:23:05.269949 [info] timer tick
+2024-11-30 11:23:07.270454 [info] timer tick
+2024-11-30 11:23:09.270887 [info] timer tick
+2024-11-30 11:23:11.271043 [info] timer tick
+2024-11-30 11:23:13.271284 [info] timer tick
+2024-11-30 11:23:15.271670 [info] timer tick
+2024-11-30 11:23:17.272215 [info] timer tick
+2024-11-30 11:23:19.273054 [info] timer tick
+2024-11-30 11:23:21.274472 [info] timer tick
+2024-11-30 11:23:23.274692 [info] timer tick
+2024-11-30 11:23:25.278200 [info] timer tick
+2024-11-30 11:23:27.278363 [info] timer tick
+2024-11-30 11:23:29.280051 [info] timer tick
+2024-11-30 11:23:31.280127 [info] timer tick
+2024-11-30 11:23:33.280323 [info] timer tick
+2024-11-30 11:23:35.280792 [info] timer tick
+2024-11-30 11:23:37.281157 [info] timer tick
+2024-11-30 11:23:39.281443 [info] timer tick
+2024-11-30 11:23:41.281863 [info] timer tick
+2024-11-30 11:23:43.282820 [info] timer tick
+2024-11-30 11:23:45.282960 [info] timer tick
+2024-11-30 11:23:47.283077 [info] timer tick
+2024-11-30 11:23:49.283553 [info] timer tick
+2024-11-30 11:23:51.284152 [info] timer tick
+2024-11-30 11:23:53.284345 [info] timer tick
+2024-11-30 11:23:55.285241 [info] timer tick
+2024-11-30 11:23:57.285397 [info] timer tick
+2024-11-30 11:23:59.285900 [info] timer tick
+2024-11-30 11:24:01.286072 [info] timer tick
+2024-11-30 11:24:03.286279 [info] timer tick
