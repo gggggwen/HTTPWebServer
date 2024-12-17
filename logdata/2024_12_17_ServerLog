@@ -1,0 +1,52 @@
+2024-12-17 19:58:47.705919 [info] establish log successfully!
+2024-12-17 19:58:47.812044 [info] establish MYSQL connection pool successfully!
+2024-12-17 19:58:47.813150 [info] establish threadpool successfully!
+2024-12-17 19:58:47.813202 [info] establish timer manager successfully!
+2024-12-17 19:59:18.885352 [info] establish log successfully!
+2024-12-17 19:59:18.902802 [info] establish MYSQL connection pool successfully!
+2024-12-17 19:59:18.903185 [info] establish threadpool successfully!
+2024-12-17 19:59:18.903212 [info] establish timer manager successfully!
+2024-12-17 20:16:00.825274 [info] establish log successfully!
+2024-12-17 20:16:00.840794 [info] establish MYSQL connection pool successfully!
+2024-12-17 20:16:00.841920 [info] establish threadpool successfully!
+2024-12-17 20:16:00.841994 [info] establish timer manager successfully!
+2024-12-17 20:16:02.842650 [info] timer tick
+2024-12-17 20:16:04.842755 [info] timer tick
+2024-12-17 20:16:06.843248 [info] timer tick
+2024-12-17 20:16:08.843386 [info] timer tick
+2024-12-17 20:16:10.843462 [info] timer tick
+2024-12-17 20:16:12.844329 [info] timer tick
+2024-12-17 20:16:14.844460 [info] timer tick
+2024-12-17 20:16:16.845032 [info] timer tick
+2024-12-17 20:16:18.845239 [info] timer tick
+2024-12-17 20:16:20.845614 [info] timer tick
+2024-12-17 20:16:22.845762 [info] timer tick
+2024-12-17 20:16:24.845956 [info] timer tick
+2024-12-17 20:16:26.846036 [info] timer tick
+2024-12-17 20:16:28.846195 [info] timer tick
+2024-12-17 20:16:30.846338 [info] timer tick
+2024-12-17 20:16:32.846702 [info] timer tick
+2024-12-17 20:16:34.846831 [info] timer tick
+2024-12-17 20:16:36.847062 [info] timer tick
+2024-12-17 20:16:38.847234 [info] timer tick
+2024-12-17 20:16:40.847454 [info] timer tick
+2024-12-17 20:16:42.847578 [info] timer tick
+2024-12-17 20:16:44.847721 [info] timer tick
+2024-12-17 20:16:46.848556 [info] timer tick
+2024-12-17 20:16:48.848656 [info] timer tick
+2024-12-17 20:16:50.848972 [info] timer tick
+2024-12-17 20:16:52.849517 [info] timer tick
+2024-12-17 20:16:54.850068 [info] timer tick
+2024-12-17 20:16:56.850226 [info] timer tick
+2024-12-17 20:16:58.850373 [info] timer tick
+2024-12-17 20:17:00.852179 [info] timer tick
+2024-12-17 20:17:02.852590 [info] timer tick
+2024-12-17 20:17:04.852836 [info] timer tick
+2024-12-17 20:17:06.853368 [info] timer tick
+2024-12-17 20:17:08.853835 [info] timer tick
+2024-12-17 20:17:10.854417 [info] timer tick
+2024-12-17 20:17:12.854801 [info] timer tick
+2024-12-17 20:32:58.898468 [info] establish log successfully!
+2024-12-17 20:32:58.913798 [info] establish MYSQL connection pool successfully!
+2024-12-17 20:32:58.917031 [info] establish threadpool successfully!
+2024-12-17 20:32:58.917295 [info] establish timer manager successfully!

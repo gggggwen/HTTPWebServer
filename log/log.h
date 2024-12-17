@@ -25,7 +25,7 @@
 #include<string.h>
 #include<fstream>
 #include<iostream>
-#include "../lock/lock.h"
+#include "../ipc/lock.h"
 
 #define BUFFERSIZE  4*1024*1024 
 

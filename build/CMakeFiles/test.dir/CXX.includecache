@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gwen/github_repo/MyTinyWebServer/CGImysql/cgimysql.h
+/home/gwen/github_repo/MyTinyWebServer/./CGImysql/cgimysql.h
 mysql/mysql.h
 -
 iostream
@@ -15,12 +15,28 @@ string
 -
 list
 -
-../lock/lock.h
-/home/gwen/github_repo/MyTinyWebServer/lock/lock.h
+../ipc/lock.h
+/home/gwen/github_repo/MyTinyWebServer/./ipc/lock.h
 ../log/log.h
-/home/gwen/github_repo/MyTinyWebServer/log/log.h
+/home/gwen/github_repo/MyTinyWebServer/./log/log.h
 
-/home/gwen/github_repo/MyTinyWebServer/lock/lock.h
+/home/gwen/github_repo/MyTinyWebServer/./config/config.h
+string
+-
+unistd.h
+-
+
+/home/gwen/github_repo/MyTinyWebServer/./ipc/fifo.h
+sys/stat.h
+-
+sys/types.h
+-
+errno.h
+-
+stdio.h
+-
+
+/home/gwen/github_repo/MyTinyWebServer/./ipc/lock.h
 pthread.h
 -
 semaphore.h
@@ -34,7 +50,7 @@ thread
 exception
 -
 
-/home/gwen/github_repo/MyTinyWebServer/log/log.h
+/home/gwen/github_repo/MyTinyWebServer/./log/log.h
 unistd.h
 -
 stdarg.h
@@ -57,10 +73,10 @@ fstream
 -
 iostream
 -
-../lock/lock.h
-/home/gwen/github_repo/MyTinyWebServer/lock/lock.h
+../ipc/lock.h
+/home/gwen/github_repo/MyTinyWebServer/./ipc/lock.h
 
-/home/gwen/github_repo/MyTinyWebServer/service/http_conn.h
+/home/gwen/github_repo/MyTinyWebServer/./service/http_conn.h
 mysql/mysql.h
 -
 sys/stat.h
@@ -78,11 +94,41 @@ string
 map
 -
 ../log/log.h
-/home/gwen/github_repo/MyTinyWebServer/log/log.h
+/home/gwen/github_repo/MyTinyWebServer/./log/log.h
 ../CGImysql/cgimysql.h
-/home/gwen/github_repo/MyTinyWebServer/CGImysql/cgimysql.h
+/home/gwen/github_repo/MyTinyWebServer/./CGImysql/cgimysql.h
 
-/home/gwen/github_repo/MyTinyWebServer/timer/timer.h
+/home/gwen/github_repo/MyTinyWebServer/./threadpool/threadpool.h
+memory
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+assert.h
+-
+iostream
+-
+sstream
+-
+thread
+-
+list
+-
+vector
+-
+../ipc/lock.h
+/home/gwen/github_repo/MyTinyWebServer/./ipc/lock.h
+../ipc/fifo.h
+/home/gwen/github_repo/MyTinyWebServer/./ipc/fifo.h
+../CGImysql/cgimysql.h
+/home/gwen/github_repo/MyTinyWebServer/./CGImysql/cgimysql.h
+../timer/timer_manager.h
+/home/gwen/github_repo/MyTinyWebServer/./timer/timer_manager.h
+
+/home/gwen/github_repo/MyTinyWebServer/./timer/timer.h
 unistd.h
 -
 sys/socket.h
@@ -104,15 +150,59 @@ vector
 memory
 -
 
-/home/gwen/github_repo/MyTinyWebServer/timer/timing_wheel.cc
+/home/gwen/github_repo/MyTinyWebServer/./timer/timer_manager.h
 timing_wheel.h
-/home/gwen/github_repo/MyTinyWebServer/timer/timing_wheel.h
-
-/home/gwen/github_repo/MyTinyWebServer/timer/timing_wheel.h
-../log/log.h
-/home/gwen/github_repo/MyTinyWebServer/log/log.h
+/home/gwen/github_repo/MyTinyWebServer/./timer/timing_wheel.h
 ../service/http_conn.h
-/home/gwen/github_repo/MyTinyWebServer/service/http_conn.h
+/home/gwen/github_repo/MyTinyWebServer/./service/http_conn.h
+
+/home/gwen/github_repo/MyTinyWebServer/./timer/timing_wheel.h
+../log/log.h
+/home/gwen/github_repo/MyTinyWebServer/./log/log.h
+../service/http_conn.h
+/home/gwen/github_repo/MyTinyWebServer/./service/http_conn.h
 timer.h
-/home/gwen/github_repo/MyTinyWebServer/timer/timer.h
+/home/gwen/github_repo/MyTinyWebServer/./timer/timer.h
+
+/home/gwen/github_repo/MyTinyWebServer/main.cc
+iostream
+-
+./config/config.h
+/home/gwen/github_repo/MyTinyWebServer/./config/config.h
+webserver.h
+/home/gwen/github_repo/MyTinyWebServer/webserver.h
+
+/home/gwen/github_repo/MyTinyWebServer/webserver.cc
+webserver.h
+/home/gwen/github_repo/MyTinyWebServer/webserver.h
+
+/home/gwen/github_repo/MyTinyWebServer/webserver.h
+unordered_map
+-
+string
+-
+unistd.h
+-
+errno.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+sys/epoll.h
+-
+mysql/mysql.h
+-
+./timer/timer_manager.h
+/home/gwen/github_repo/MyTinyWebServer/./timer/timer_manager.h
+./config/config.h
+/home/gwen/github_repo/MyTinyWebServer/./config/config.h
+./threadpool/threadpool.h
+/home/gwen/github_repo/MyTinyWebServer/./threadpool/threadpool.h
+./CGImysql/cgimysql.h
+/home/gwen/github_repo/MyTinyWebServer/./CGImysql/cgimysql.h
+./service/http_conn.h
+/home/gwen/github_repo/MyTinyWebServer/./service/http_conn.h
 

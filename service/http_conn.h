@@ -61,6 +61,7 @@ class http_connection
         LOGIN    ,
         UPDATE_FILE ,
         GET_FILE ,
+        GET_DIR  , 
         DELETE_FILE , 
         UNDEFINED ,
     };
@@ -70,10 +71,11 @@ public:
     void clear_data() ; 
 private:
     /*tools*/
-    bool  file_available();
+    bool  file_available() ;
+    std::string  get_file_path() ; 
     int   get_file_size() ;
-    bool  get_user_passwd();
-    bool  mysql_process();
+    bool  get_user_passwd() ;
+    bool  mysql_process(); 
     bool  analyze_get()  ;
     bool  analyze_post() ;
     bool  analyze_del () ; 

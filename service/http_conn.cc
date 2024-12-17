@@ -66,6 +66,7 @@ http_connection::parse_line()
     return LINE_OK;
 };
 
+/*会根据权限以及文件是否存在 更新HTTP解码*/
 bool 
 http_connection::file_available()
 {
@@ -94,6 +95,7 @@ http_connection::file_available()
     return true ; 
 };
 
+/*获取具体的请求业务类型*/
 std::string
 get_path(char* s)
 {
@@ -108,6 +110,22 @@ http_connection::get_file_size()
     stat(file_path.c_str() , &info) ; 
     return info.st_size ; 
 };
+
+std::string 
+http_connection::get_file_path()
+{
+    char *tmp = read_buffer + read_offset;
+    std::string s1 = "filepath=";
+    char *res = strstr(tmp, s1.c_str()); // 检测是否有filepath字段
+    if (!res)
+    {
+        LOG_ERROR("usr field can not be found in content in sockfd %d", m_sockfd);
+        return std::string("F");
+    }
+    res = res + s1.size();   // 更新res到filepath值首位
+    return std::string(res); // 行尾无"\r\n"
+}
+
 
 bool
 http_connection::get_user_passwd()
@@ -132,9 +150,10 @@ http_connection::get_user_passwd()
         return false;
     }
     res = res+s2.size() ;  //更新res到password值首位
-    passwd = res ;
+    passwd = res ; //行尾无"\r\n"
     return true ; 
 };
+
 
 bool 
 http_connection::mysql_process()
@@ -274,13 +293,13 @@ http_connection::analyze_post()
         m_action = G_LOGIN_HTML ;
         file_path = "../src/log.html";
     }
-    else if(path == "/G") //请求文件资源
+    else if(path == "/GF") //请求文件资源
     {
         m_action = GET_FILE; 
     }
-    else if(path =="/U") //上传文件资源
+    else if (path == "/GD") // 请求文件资源
     {
-        m_action = UPDATE_FILE ; 
+        m_action = GET_DIR;
     }
     else 
     {
@@ -435,11 +454,17 @@ http_connection::parse_request_body()
             return false;
         }
         break ; 
-    case UPDATE_FILE :
-        /*待定*/
+    case GET_DIR :
+
         break ; 
     case GET_FILE :
-        /*待定*/
+        file_path = get_file_path();
+        if (file_path.size() == 1 && file_path == "F")
+        {
+            file_path.clear();
+            return false;
+        }
+        file_available() ;
         break; 
     case DELETE_FILE:
         /*待定*/
@@ -534,8 +559,6 @@ http_connection::do_request()
             return true ; 
         }
         file_available();
-        break;
-    case UPDATE_FILE:
         break;
     case GET_FILE:
         break;

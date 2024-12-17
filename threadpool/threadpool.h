@@ -6,11 +6,13 @@
 #include<arpa/inet.h>
 #include<unistd.h>
 #include<assert.h>
-#include <iostream>
+#include<iostream>
+#include<sstream>
 #include<thread>
 #include<list>
 #include<vector>
-#include"../lock/lock.h"
+#include"../ipc/lock.h"
+#include"../ipc/fifo.h"
 #include"../CGImysql/cgimysql.h"
 #include"../timer/timer_manager.h"
 
@@ -39,9 +41,8 @@ private:
     std::vector<std::thread> m_threads;
     Sqlconnect_pool *m_connPool; // 数据库
 
-    int m_max_task;
+    int m_max_task   ;
     int m_thread_num ;
-
 
 };
 
@@ -82,8 +83,8 @@ threadpool<T>::~threadpool()
     {
         for (auto it = m_jobqueue.begin(); it != m_jobqueue.end();)
         {
-            it = m_jobqueue.erase(it); // 删除元素
-            // 无需手动delete，std::shared_ptr 会自动释放资源
+            it = m_jobqueue.erase(it); 
+            /*无需手动delete，std::shared_ptr 会自动释放资源*/
         }
     }
 }
@@ -98,6 +99,15 @@ void threadpool<T>::worker(void *args)
 template <typename T>
 void threadpool<T>::run()
 {
+    /*create fifo*/
+    std::thread::id thread_id = std::this_thread::get_id();
+    std::stringstream ss;
+    ss << thread_id;
+    std::string str = "/tmp/fifo."+ss.str();
+    std::cout<< str<< std::endl ;
+
+    RD_Fifo fifo(str.c_str()) ;
+
     while (true)
     {
         std::shared_ptr<T> user ; 

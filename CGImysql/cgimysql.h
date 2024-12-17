@@ -8,7 +8,7 @@
 #include<iostream>
 #include<string>
 #include<list>
-#include"../lock/lock.h"
+#include"../ipc/lock.h"
 #include"../log/log.h"
 
 class Sqlconnect_pool

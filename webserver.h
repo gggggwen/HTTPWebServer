@@ -12,7 +12,7 @@
 #include <mysql/mysql.h>
 
 #include"./timer/timer_manager.h"
-#include"config.h"
+#include"./config/config.h"/
 #include"./threadpool/threadpool.h"
 #include"./CGImysql/cgimysql.h"
 #include"./service/http_conn.h"

@@ -1,1 +1,30 @@
 hello_world!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebServer</title>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div align="center">
+        <font size="8"><strong>您好用户, 欢迎登录</strong></font>
+    </div>
+    <br />
+    <br />
+    <form action="GF" method="post">
+        <div align="center"><input type="filepath" name="filepath" placeholder="文件路径" required="required"></div><br />
+        <div align="center"><button type="submit">获取文件</button></div>
+    </form>
+    <br />
+    <form action="GD" method="post">
+            <div align="center"><input type="dirpath" name="dirpath" placeholder="目录路径" required="required"></div><br />
+            <div align="center"><button type="submit">获取目录</button></div>
+    </form>
+
+    </div>
+</body>
+</html>
