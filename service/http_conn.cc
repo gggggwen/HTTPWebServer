@@ -67,6 +67,27 @@ http_connection::parse_line()
     return LINE_OK;
 };
 
+/*将二进制编码"%2F" into "/"*/
+void 
+http_connection::decode_path(std::string &path)
+{
+    std::string tmp;
+    for (size_t i = 0; i < path.size(); ++i)
+    {
+        // 检查当前字符是否为 '%' 并且接下来的两个字符是 '2' 和 'F'
+        if (i + 2 < path.size() && path[i] == '%' && path[i + 1] == '2' && path[i + 2] == 'F')
+        {
+            tmp.push_back('/'); // 解码为 '/'
+            i += 2;             // 跳过接下来的两个字符（'2'和'F'）
+        }
+        else
+        {
+            tmp.push_back(path[i]); // 保留其他字符
+        }
+    }
+    path = std::move(tmp); // 使用 std::move 传递所有权
+}
+
 std::string
 http_connection::get_threadID_s()
 {
@@ -82,12 +103,14 @@ http_connection::dir_available()
     struct stat dir_info;
     if (stat(dir_path.c_str(), &dir_info) != 0) // 检测一个文件是否为目录
     {
-        m_http_code = INTERNAL_ERROR ; 
+        m_http_code = NO_RESOURCE ;
+        LOG_INFO("The directory %s is illegal ", dir_path.c_str());
         return false;
     }
     if (!dir_info.st_mode & (S_IFDIR | DIR_MODE)) // 检查权限
     {
         m_http_code = NO_RESOURCE ; 
+        LOG_INFO("The directory %s can not be opened", dir_path.c_str()) ; 
         return false;
     }
     return true;
@@ -290,18 +313,19 @@ http_connection::mysql_process()
 bool 
 http_connection::get_dir_content()
 {
-    file_path = "/tmp/cache." + get_threadID_s() ;
+    file_path = "/tmp/cache" + get_threadID_s()+".html" ;
     std::ofstream cache(file_path , std::ios::out) ; //缓存(文件) , 默认截断 , 每次都会清空文件 
     int tmp_buffer_size = 1024 ; 
     char* tmp_buffer = new char[tmp_buffer_size] ; 
     std::string shell = "ls -l " + dir_path + " | awk '$1 ~ /r/ {type=($1 ~ /^d/) ? \"D\" : \"F\"; print type \" : \" $9}'";
 
     FILE* fp = popen(shell.c_str() , "r") ; 
+    cache<< "from directory:" << dir_path <<std::endl; 
     while(fgets(tmp_buffer , tmp_buffer_size, fp)!=NULL) 
     {
-        cache.write(tmp_buffer, tmp_buffer_size) ; 
+        cache.write(tmp_buffer, strlen(tmp_buffer)) ; 
     }
-
+    LOG_INFO("The contents of %s was written to /tmp/cache%s.html successfully" , dir_path.c_str() , get_threadID_s().c_str()) ;
     pclose(fp) ; 
     return true ; 
 }
@@ -523,6 +547,7 @@ http_connection::parse_request_body()
             dir_path.clear();
             return false;
         }
+        decode_path(dir_path) ; /*转换掉二进制编码*/ 
         break ; 
     case GET_FILE :
         file_path = get_file_path();
@@ -531,6 +556,7 @@ http_connection::parse_request_body()
             file_path.clear();
             return false;
         }
+        decode_path(file_path) ; /*转换掉二进制编码*/
         break; 
     case DELETE_FILE:
         break ; 

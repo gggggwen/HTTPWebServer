@@ -82,6 +82,7 @@ private:
     std::string  get_threadID_s() ; 
     std::string  get_file_path() ; 
     std::string  get_dir_path()  ;
+    void  decode_path(std::string & path) ; 
     bool  get_dir_content() ; 
     int   get_file_size() ;
     bool  get_user_passwd() ;

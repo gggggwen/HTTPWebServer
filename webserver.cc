@@ -202,8 +202,6 @@ Webserver::handle_read(int sockfd , char* buffer  )
             int temp = read(sockfd , buffer+bytes_have_read ,READ_BUFFER_SIZE ) ; 
             if( temp> 0)
             {
-                std::cout<<buffer<<std::endl;
-                std::cout<<"--------------------"<<std::endl;
                 bytes_have_read +=temp ; 
                 if(bytes_have_read>=READ_BUFFER_SIZE)
                     break ; 
