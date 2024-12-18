@@ -26,6 +26,7 @@ http_connection::clear_data()
     m_check_state = CHECK_STATE_REQUESTLINE;
     m_http_code = GET_REQUEST;
 
+    dir_path.clear() ; 
     file_path.clear() ; 
     passwd.clear() ;
     user.clear() ; 
@@ -64,6 +65,32 @@ http_connection::parse_line()
         return LINE_BAD;
     }
     return LINE_OK;
+};
+
+std::string
+http_connection::get_threadID_s()
+{
+    std::thread::id thread_id = std::this_thread::get_id();
+    std::stringstream ss;
+    ss << thread_id;
+    return  ss.str();
+}
+
+bool
+http_connection::dir_available()
+{
+    struct stat dir_info;
+    if (stat(dir_path.c_str(), &dir_info) != 0) // 检测一个文件是否为目录
+    {
+        m_http_code = INTERNAL_ERROR ; 
+        return false;
+    }
+    if (!dir_info.st_mode & (S_IFDIR | DIR_MODE)) // 检查权限
+    {
+        m_http_code = NO_RESOURCE ; 
+        return false;
+    }
+    return true;
 };
 
 /*会根据权限以及文件是否存在 更新HTTP解码*/
@@ -112,6 +139,21 @@ http_connection::get_file_size()
 };
 
 std::string 
+http_connection::get_dir_path() 
+{
+    char *tmp = read_buffer + read_offset;
+    std::string s1 = "dirpath=";
+    char *res = strstr(tmp, s1.c_str()); // 检测是否有filepath字段
+    if (!res)
+    {
+        LOG_ERROR("dirpath field can not be found in content in sockfd %d", m_sockfd);
+        return std::string("F");
+    }
+    res = res + s1.size();   // 更新res到filepath值首位
+    return std::string(res); // 行尾无"\r\n"
+}
+
+std::string 
 http_connection::get_file_path()
 {
     char *tmp = read_buffer + read_offset;
@@ -119,12 +161,13 @@ http_connection::get_file_path()
     char *res = strstr(tmp, s1.c_str()); // 检测是否有filepath字段
     if (!res)
     {
-        LOG_ERROR("usr field can not be found in content in sockfd %d", m_sockfd);
+        LOG_ERROR("filepath field can not be found in content in sockfd %d", m_sockfd);
         return std::string("F");
     }
     res = res + s1.size();   // 更新res到filepath值首位
     return std::string(res); // 行尾无"\r\n"
 }
+
 
 
 bool
@@ -241,6 +284,25 @@ http_connection::mysql_process()
             mysql_free_result(res);
         }
     }
+    return true ; 
+}
+
+bool 
+http_connection::get_dir_content()
+{
+    file_path = "/tmp/cache." + get_threadID_s() ;
+    std::ofstream cache(file_path , std::ios::out) ; //缓存(文件) , 默认截断 , 每次都会清空文件 
+    int tmp_buffer_size = 1024 ; 
+    char* tmp_buffer = new char[tmp_buffer_size] ; 
+    std::string shell = "ls -l " + dir_path + " | awk '$1 ~ /r/ {type=($1 ~ /^d/) ? \"D\" : \"F\"; print type \" : \" $9}'";
+
+    FILE* fp = popen(shell.c_str() , "r") ; 
+    while(fgets(tmp_buffer , tmp_buffer_size, fp)!=NULL) 
+    {
+        cache.write(tmp_buffer, tmp_buffer_size) ; 
+    }
+
+    pclose(fp) ; 
     return true ; 
 }
 
@@ -455,7 +517,12 @@ http_connection::parse_request_body()
         }
         break ; 
     case GET_DIR :
-
+        dir_path = get_dir_path() ;
+        if (dir_path.size() == 1 && dir_path == "F")
+        {
+            dir_path.clear();
+            return false;
+        }
         break ; 
     case GET_FILE :
         file_path = get_file_path();
@@ -464,10 +531,8 @@ http_connection::parse_request_body()
             file_path.clear();
             return false;
         }
-        file_available() ;
         break; 
     case DELETE_FILE:
-        /*待定*/
         break ; 
     default:
         return false  ; 
@@ -559,15 +624,26 @@ http_connection::do_request()
             return true ; 
         }
         file_available();
+        break ;
+    case GET_DIR:
+        if (!get_dir_content())
+        {
+            m_http_code = INTERNAL_ERROR;
+            return true;
+        }
+        if (!dir_available())
+            return true;
+        file_available();
         break;
     case GET_FILE:
-        break;
+        file_available();
+        break ;
     case DELETE_FILE:
-        break;
+        break ;
     default:
-        LOG_ERROR("undefined action occurred ") ; 
+        LOG_ERROR("undefined action occurred in sockfd %d " , m_sockfd) ; 
         return false  ; 
-        break;
+        break ;
     }
     if(file_path.size()> 0 )
     {

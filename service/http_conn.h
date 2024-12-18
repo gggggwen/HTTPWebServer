@@ -7,6 +7,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <iostream>
+#include <sstream>
+#include <fstream> 
 #include <string>
 #include <map>
 #include"../log/log.h"
@@ -19,6 +21,10 @@
 #ifndef WRITE_BUFFER_SIZE
 #define WRITE_BUFFER_SIZE 4096
 #endif
+
+#ifndef DIR_MODE
+#define DIR_MODE S_IFDIR | S_IXUSR | S_IXGRP | S_IXOTH
+#endif  
 
 class http_connection
 {
@@ -72,7 +78,11 @@ public:
 private:
     /*tools*/
     bool  file_available() ;
+    bool  dir_available()  ;
+    std::string  get_threadID_s() ; 
     std::string  get_file_path() ; 
+    std::string  get_dir_path()  ;
+    bool  get_dir_content() ; 
     int   get_file_size() ;
     bool  get_user_passwd() ;
     bool  mysql_process(); 
@@ -96,6 +106,7 @@ private:
 public:
     static std::string accept_language ;
     std::string file_path ; 
+    std::string dir_path ; 
     char* read_buffer ;
     int read_offset ;  
     char* write_buffer ; 
@@ -108,7 +119,7 @@ private:
     METHOD      m_method  ;
     ACTION      m_action ;  
     std::string user ;
-    std::string passwd ;     
+    std::string passwd ;    
 };
 
 #endif

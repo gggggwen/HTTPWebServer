@@ -99,14 +99,14 @@ void threadpool<T>::worker(void *args)
 template <typename T>
 void threadpool<T>::run()
 {
-    /*create fifo*/
-    std::thread::id thread_id = std::this_thread::get_id();
-    std::stringstream ss;
-    ss << thread_id;
-    std::string str = "/tmp/fifo."+ss.str();
-    std::cout<< str<< std::endl ;
+    // /*create fifo*/
+    // std::thread::id thread_id = std::this_thread::get_id();
+    // std::stringstream ss;
+    // ss << thread_id;
+    // std::string str = "/tmp/fifo."+ss.str();
+    // std::cout<< str<< std::endl ;
 
-    RD_Fifo fifo(str.c_str()) ;
+    //RD_Fifo fifo(str.c_str()) ;
 
     while (true)
     {
