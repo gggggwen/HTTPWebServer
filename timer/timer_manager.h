@@ -4,7 +4,7 @@
 
 #include"timing_wheel.h"
 #include"../service/http_conn.h"
-
+#include<sys/mman.h>
 class  timing_wheel ; 
 
 class Utils
@@ -33,6 +33,11 @@ public:
     void show_error(int connfd, const char *info);
 
     static bool mod_fd(int sock_fd ,int old_events  , int new_events) ; 
+
+    //对文件进行内存映射
+    void* u_mmap(int fd, int len, int offset );
+
+    bool  u_unmmap(char* buffer , int len );
 
 public:
     static int *u_pipefd;

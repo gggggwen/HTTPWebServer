@@ -5,7 +5,7 @@ project(HttpServer)
 
 
 set(SRC_LIST main.cc  webserver.cc  ./CGImysql/cgimysql.cc  ./ipc/lock.h  ./ipc/fifo.h ./log/log.cc  ./timer/timer.h ./timer/timing_wheel.cc  
-      ./timer/timer_manager.cc ./threadpool/threadpool.h   ./service/http_conn.cc  ./config/config.cc  )
+      ./timer/timer_manager.cc ./threadpool/threadpool.h  ./IOthread/IO_thread.h ./service/http_conn.cc  ./config/config.cc  )
 
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")

@@ -120,6 +120,14 @@ http_connection::dir_available()
 bool 
 http_connection::file_available()
 {
+    if(file_path.back()=='/')
+    {
+        LOG_INFO("The %s is not a file  in sockfd %d ", file_path.c_str(), m_sockfd);
+        m_http_code = NO_RESOURCE;
+        file_path.clear();
+        close_conn = true;
+    }
+
     std::ifstream file(file_path);
     if (!file)
     {
@@ -128,20 +136,25 @@ http_connection::file_available()
         case EACCES:
             LOG_INFO("permission was denied for this file %s in sockfd %d ", file_path.c_str(), m_sockfd);
             m_http_code = FORBIDDEN_REQUEST ;
+            file_path.clear() ; 
             close_conn = true;
             break;
         case ENOENT:
             LOG_INFO("The file %s does not exist in sockfd %d ", file_path.c_str(), m_sockfd);
             m_http_code = NO_RESOURCE ;
+            file_path.clear();
             close_conn = true;
             break;
         default:
             LOG_ERROR("Unable to open file %s in sockfd %d" , file_path.c_str() , m_sockfd) ;
             m_http_code = INTERNAL_ERROR ;
+            file_path.clear();
             close_conn = true;
             break;
         }
     }
+    else 
+        LOG_INFO("The file %s is available " , file_path.c_str()) ; 
     return true ; 
 };
 
@@ -152,6 +165,15 @@ get_path(char* s)
     int range = strchr(s , ' ') - s ; 
     return std::string(s , range) ; 
 };
+
+
+struct stat
+http_connection::get_file_info()
+{
+    struct stat info;
+    stat(file_path.c_str(), &info);
+    return info ; 
+}
 
 int
 http_connection::get_file_size()

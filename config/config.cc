@@ -6,7 +6,7 @@ Config::Config()
     PORT = 9099 ; 
 
     /*开辟的线程数*/
-    THREAD_NUM = 8 ; 
+    THREAD_NUM = 6 ; 
 
     //监听套接字 默认ET 
     LISTEN_MOD =  1 ; 
@@ -24,10 +24,10 @@ Config::Config()
     LOG_DIRECTORY = "/home/gwen/github_repo/MyTinyWebServer/logdata/";
 
     /*tick的周期*/
-    INTERVAL = 2 ; 
+    INTERVAL = 3 ; 
 
     /*时间轮槽数*/
-    SLOT_NUM = 3 ; 
+    SLOT_NUM = 8 ; 
 
     /*数据库接口信息*/
     SQL_CONNECTION_NUM = 8;

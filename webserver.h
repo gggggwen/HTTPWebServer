@@ -12,10 +12,11 @@
 #include <mysql/mysql.h>
 
 #include"./timer/timer_manager.h"
-#include"./config/config.h"/
+#include"./config/config.h"
 #include"./threadpool/threadpool.h"
 #include"./CGImysql/cgimysql.h"
 #include"./service/http_conn.h"
+#include"./IOthread/IO_thread.h"
 
 class Utils ;
 class timing_wheel ; 
@@ -41,8 +42,8 @@ public:
     void event_loop() ;  
 
 private:
-    bool handle_read(int sockfd, char *buffer );
-    bool handle_write(int sockfd, char *buffer, int &bytes_need_send);
+    bool handle_read (int sockfd);
+    bool handle_write(int sockfd);
     bool handle_new_connection() ; 
     bool handle_dead_connection(int sockfd) ;
     bool handle_signal(bool& timeout ) ; 
@@ -80,7 +81,7 @@ private:
     //有关线程池
     int m_max_task; //请求队列最大容量
     threadpool<http_connection> m_threadpool ;
-
+    O_thread<http_connection>   m_othread ; 
     timing_wheel* m_timer_manager ; 
 
 };

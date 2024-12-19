@@ -74,7 +74,9 @@ class http_connection
 public:
     bool process();
     void init(int sockfd);
-    void clear_data() ; 
+    void clear_data() ;
+    int get_file_size();
+    struct stat get_file_info() ; 
 private:
     /*tools*/
     bool  file_available() ;
@@ -84,7 +86,6 @@ private:
     std::string  get_dir_path()  ;
     void  decode_path(std::string & path) ; 
     bool  get_dir_content() ; 
-    int   get_file_size() ;
     bool  get_user_passwd() ;
     bool  mysql_process(); 
     bool  analyze_get()  ;

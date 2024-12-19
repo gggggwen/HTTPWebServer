@@ -95,3 +95,15 @@ Utils::mod_fd(int sockfd , int old_events , int new_events)
     return true ;
 }
 
+void*  
+Utils::u_mmap(int fd ,  int len, int offset)
+{
+    return mmap(NULL , len , PROT_READ , MAP_SHARED, fd , offset) ; 
+}
+
+bool 
+Utils::u_unmmap(char* buffer , int len)
+{
+    int res = munmap(buffer , len) ; 
+    return true ; 
+}

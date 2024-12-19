@@ -79,14 +79,17 @@ Webserver::pool_init()
 
     m_threadpool.init(m_max_task , m_thread_num ,Sqlconnect_pool::get_instance()) ;
     LOG_INFO("establish threadpool successfully!") ; 
+
+    m_othread.init(m_connect_mod) ;
+    LOG_INFO("establish O_thread successfully!");
+
     return ; 
 };
 
 void 
 Webserver::timer_manager_init()
 {
-    m_timer_manager = new timing_wheel ; 
-
+    m_timer_manager = new timing_wheel ;
     m_utils.init(m_interval) ; 
     m_timer_manager->init(m_interval , m_slot_num) ; 
     LOG_INFO("establish timer manager successfully!") ; 
@@ -186,10 +189,11 @@ Webserver::handle_dead_connection(int sockfd)
 
 //处理读事件啊+关闭连接请求
 bool 
-Webserver::handle_read(int sockfd , char* buffer  ) 
+Webserver::handle_read(int sockfd) 
 {
     int bytes_have_read = 0 ; 
     http_connection*  user = m_users[sockfd].get() ;
+    char* buffer = user->read_buffer ; 
     if(!user)
     {
         LOG_ERROR("the user of sockfd:%d does not exist!", sockfd) ; 
@@ -226,7 +230,10 @@ Webserver::handle_read(int sockfd , char* buffer  )
             }
         } 
         m_timer_manager->adjust_timer(sockfd) ;
-        m_threadpool.append(m_users[sockfd]);
+        if(!m_threadpool.append(m_users[sockfd]))
+        {
+            return false ; 
+        }
     }
     else // LT 
     {
@@ -253,70 +260,13 @@ Webserver::handle_read(int sockfd , char* buffer  )
 
 //只负责传输http响应报文
 bool
-Webserver::handle_write(int sockfd , char* buffer , int& bytes_need_send) 
+Webserver::handle_write(int sockfd ) 
 {
-    http_connection *user = m_users[sockfd].get();
-
-    if(!buffer||user->write_offset==0 )
+    if(!m_othread.append(m_users[sockfd]))
     {
-        LOG_ERROR("pass in nullptr buffer or zero bytes_need_send! in webserver.cc:264") ; 
-        return false ;
+        return false ; 
     }
-    while (bytes_need_send>0 )
-    {
-        int temp  = write(sockfd , buffer , bytes_need_send) ;
-        if(temp > 0 )
-        {
-            bytes_need_send -= temp;
-        }
-        else if (temp < 0)
-        {
-            if (errno == EAGAIN || errno == EWOULDBLOCK)
-                continue; 
-            else 
-            {
-                LOG_ERROR("write http daatagram error ! sockfd:%d", sockfd);
-                handle_dead_connection(sockfd);
-                return false;
-            }
-        }
-        else 
-        {
-            break ; 
-        }
-    }
-
-
-    if(user->file_path.length() > 0 ) 
-    {
-        LOG_INFO("the file %s will be send to client", user->file_path.c_str()) ; 
-        char buffer[1024];
-        FILE*  file =fopen(user->file_path.c_str() ,"rb") ;
-        size_t bytes_read;
-        while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0)
-        {
-            send(sockfd, buffer, bytes_read, 0);
-        }
-        fclose(file) ; 
-    }
-    else 
-        LOG_INFO("no file need to be transmit... maybe some error occurred") ; 
-
-    /*完成数据传输后若需要关闭套接字则直接关闭即可*/
     m_timer_manager->adjust_timer(sockfd);
-    if (user->close_conn)
-    {
-        return handle_dead_connection(sockfd);
-    }
-
-    /*清空buffer*/
-    user->clear_data() ; 
-    /*完成写事件后 , 注销写事件 */
-    if(m_connect_mod)
-        m_utils.mod_fd(sockfd , EPOLLET|EPOLLIN|EPOLLRDHUP , 0) ;
-    else 
-        m_utils.mod_fd(sockfd , EPOLLIN|EPOLLRDHUP , 0 ) ; 
-
     return true ; 
 };
 
@@ -433,19 +383,17 @@ Webserver::event_loop()
             // 处理客户连接上接收到的数据
             else if (events[i].events & EPOLLIN)
             {
-                http_connection *user = m_users[sockfd].get();
-                handle_read(sockfd, user->read_buffer);
+                handle_read(sockfd);
             }
             else if (events[i].events & EPOLLOUT)
             {
-                http_connection *user = m_users[sockfd].get();
                 LOG_INFO("A write event need to be done in sockfd %d" , sockfd) ; 
-                handle_write(sockfd, user->write_buffer, user->write_offset);
+                handle_write(sockfd);
             }
         }
 
 
-        /*关闭不健康的连接*/
+        /*关闭线程池内不健康的连接*/
         {
             MutexLockguard lockguard(m_threadpool.m_dead_userslock) ; 
             while(m_threadpool.m_dead_users.size()>0)
@@ -455,6 +403,18 @@ Webserver::event_loop()
                 m_threadpool.m_dead_users.pop_back();
             }
         }
+
+        /*关闭写进程中需要关闭/不健康链接*/
+        {
+            MutexLockguard lockguard(m_othread.m_dead_userslock) ; 
+            while (m_othread.m_dead_users.size() > 0)
+            {
+                int dead_sockfd = m_othread.m_dead_users.back();
+                handle_dead_connection(dead_sockfd);
+                m_othread.m_dead_users.pop_back();
+            }
+        }
+
 
         if (timeout)
         {
