@@ -10,6 +10,7 @@ set(SRC_LIST main.cc  webserver.cc  ./CGImysql/cgimysql.cc  ./ipc/lock.h  ./ipc/
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
 
+#可自行調整
 set(EXECUTABLE_OUTPUT_PATH /home/gwen/github_repo/HTTPWebServer )
 
 add_executable(server ${SRC_LIST})

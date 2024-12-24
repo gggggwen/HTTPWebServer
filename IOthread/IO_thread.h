@@ -104,7 +104,14 @@ void O_thread<T>::handle(std::shared_ptr<T> user_sp)
                 continue;
             else
             {
-                LOG_ERROR("write http daatagram error ! sockfd:%d", sockfd);
+                if (errno == EBADF)
+                {
+                    LOG_ERROR("The sockfd %d was closed before send data to client", user->m_sockfd);
+                }
+                else
+                {
+                    LOG_ERROR("Send error , Uable to send http datagram in sockfd %d", user->m_sockfd);
+                }
                 m_dead_users.push_front(sockfd);
                 return;
             }
@@ -141,7 +148,14 @@ void O_thread<T>::handle(std::shared_ptr<T> user_sp)
                 {
                     m_dead_users.push_front(sockfd);
                     m_utils.u_unmmap(buffer, file_size);
-                    LOG_ERROR("Send error , Uable to send file in sockfd %d", user->m_sockfd);
+                    if(errno == EBADF)
+                    {
+                        LOG_ERROR("The sockfd %d was closed before send data to client", user->m_sockfd);
+                    }
+                    else 
+                    {
+                        LOG_ERROR("Send error , Uable to send file in sockfd %d", user->m_sockfd);
+                    }
                     return ; 
                 }
                 bytes_read+=chunk_size ; 
