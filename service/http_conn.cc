@@ -411,7 +411,7 @@ http_connection::analyze_post()
     }
     else 
     {
-        LOG_ERROR("getting POST path error ouccrred") ; 
+        LOG_ERROR("getting POST path error ouccrred: %s", read_buffer) ; 
         return false  ; 
     }
     return true ; 
