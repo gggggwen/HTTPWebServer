@@ -72,6 +72,7 @@ class http_connection
         UNDEFINED ,
     };
 public:
+    ~http_connection() ; 
     bool process();
     void init(int sockfd);
     void clear_data() ;

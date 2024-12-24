@@ -10,11 +10,11 @@ set(SRC_LIST main.cc  webserver.cc  ./CGImysql/cgimysql.cc  ./ipc/lock.h  ./ipc/
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
 
-set(EXECUTABLE_OUTPUT_PATH /home/gwen/github_repo/MyTinyWebServer )
+set(EXECUTABLE_OUTPUT_PATH /home/gwen/github_repo/HTTPWebServer )
 
-add_executable(test ${SRC_LIST})
+add_executable(server ${SRC_LIST})
 
 # 链接 pthread mysqlclient 库 
 set(mysqlclient "/usr/lib64/mysql/libmysqlclient.so.18.1.0")
-target_link_libraries(test pthread ${mysqlclient})
+target_link_libraries(server pthread ${mysqlclient})
 

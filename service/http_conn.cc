@@ -11,7 +11,11 @@ const std::string error_404_form = "The requested file was not found on this ser
 const std::string error_500_title = "HTTP/1.1 500 Internal Error";
 const std::string error_500_form = "There was an unusual problem serving the request file.\n";
 
-
+http_connection::~http_connection()
+{
+    delete[] read_buffer;
+    delete[] write_buffer ; 
+};
 
 void 
 http_connection::clear_data()
