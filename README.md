@@ -20,29 +20,27 @@ make        #编译
 
 - #### demo演示
 
-<video src="./introduction/demo.mp4"></video>
-
-
+<div align=center><img src="https://github.com/gggggwen/HTTPWebServer/blob/master/introduction_src/demo.mp4" height="429"/> </div>
 
 # 2.整体架构
 
-​	[2.1 对比TinyWebServer](#2.1 对比[TinyWebServer](https://github.com/qinguoyi/TinyWebServer))
+​	[2.1 对比TinyWebServer](#2.1对比[TinyWebServer](https://github.com/qinguoyi/TinyWebServer))
 
-​	[2.2 主线程(reactor / class WebServer)](#2.2 主线程(reactor / class WebServer))
+​	[2.2 主线程(reactor / class WebServer)](#2.2主线程(reactor/classWebServer))
 
 ​		[2.2.1主线程负责](#2.2.1主线程负责)
 
-​		[2.2.2 I/O分离](#2.2.2 I/O分离)
+​		[2.2.2 I/O分离](#2.2.2I/O分离)
 
 ​	[2.3一些细节](#2.3一些细节)
 
-​		[2.3.1 实现大文件传输----内存映射mmap](#2.3.1 实现大文件传输----内存映射mmap)
+​		[2.3.1 实现大文件传输----内存映射mmap](#2.3.1实现大文件传输----内存映射mmap)
 
-​		[2.3.2 保证线程安全----std::shared_ptr](#2.3.2 保证线程安全----std::shared_ptr)
+​		[2.3.2 保证线程安全----std::shared_ptr](#2.3.2保证线程安全----std::shared_ptr)
 
-​	[2.4 美好的梦想破灭了](#2.4 美好的梦想破灭了)
+​	[2.4 美好的梦想破灭了](#2.4美好的梦想破灭了)
 
-​		[2.4.1 原本设想实现类似于云服务器](#2.4.1 原本设想实现类似于云服务器)
+​		[2.4.1 原本设想实现类似于云服务器](#2.4.1原本设想实现类似于云服务器)
 
 ​		[2.4.2 本来想用FIFO秀一下肌肉](#2.4.2 本来想用FIFO秀一下肌肉)
 
@@ -50,7 +48,7 @@ make        #编译
 
 ![profile](./introduction_src/profile.png)
 
-## 	2.1 对比[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
+## 	2.1对比[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
 
 - #### Reactor 与 Proactor
 
@@ -88,7 +86,7 @@ make        #编译
 
 
 
-## 2.2 主线程(reactor / class WebServer)
+## 2.2主线程(reactor / class WebServer)
 
 ### 2.2.1主线程负责
 
@@ -99,7 +97,7 @@ make        #编译
 
 
 
-### 2.2.2 I/O分离
+### 2.2.2I/O分离
 
 由于主线程负责太多工作, 很容易成为程序的性能瓶颈, 我尝试将对网络的IO操作尝试转接给对应的套接字,`O`操作好说, 因为每当客户发来一个HTTP-Request ,服务器总会按照如下顺序执行:
 
@@ -117,7 +115,7 @@ make        #编译
 
 ## 2.3一些细节
 
-### 2.3.1 实现大文件传输----内存映射mmap
+### 2.3.1实现大文件传输----内存映射mmap
 
 在《UNIX网络编程卷2》中` mmap` 被作为一种shared memory 来作为进程间通信(**IPC**)的工具,其具体操作就是将中某个文件在磁盘的空间映射到内存中。
 
@@ -139,7 +137,7 @@ make        #编译
 
 
 
-### 2.3.2 保证线程安全----std::shared_ptr
+### 2.3.2保证线程安全----std::shared_ptr
 
 我们要注意到这样一种**race condition**:
 
@@ -174,9 +172,9 @@ make        #编译
 
   
 
-## 2.4 美好的梦想破灭了
+## 2.4美好的梦想破灭了
 
-### 	2.4.1 原本设想实现类似于云服务器
+### 	2.4.1原本设想实现类似于云服务器
 
 本来想实现一个类似于云服务器功能的程序 , 可以支持一下功能:
 
@@ -195,7 +193,7 @@ make        #编译
 
 总的来说主要是时间成本的问题, **我认为与其花时间来研究HTTP协议和前端框架, 倒不如抽时间来学习LINUX更多神奇的内部机制, 以及强大的nginx服务器的架构以及实现细节等诸如此类的更深入的技术**
 
-### 	2.4.2 本来想用FIFO秀一下肌肉
+### 	2.4.2本来想用FIFO秀一下肌肉
 
 在项目开发阶段，正好在读《UNIX网络编程卷2》，正好看到“管道和FIFO"这一章，里面提到FIFO可以作为一种实现无亲缘关系（fork）的进程间通信， 当时我就想在主程序外来再开发出一个脚本：工作线程可以通过FIFO向脚本进程传输想要获取的文件 ， 脚本则通过工作线程传来的文件路径，来判断是否存在， 是否有权限， 能否打开 ， 以及文件内容再通过一个共享内存区（可简化成一个文件^1^）传输给后台。
 
