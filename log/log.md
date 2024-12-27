@@ -49,6 +49,12 @@ LOG_INFO("hello world %d , %s",sockfd,message) ;
 
 
 
+### 1.3 设计模式---单例模式
+
+有且仅有一个实例 , 生命周期跟随全局
+
+[C++ 单例模式总结](https://blog.csdn.net/unonoi/article/details/121138176)
+
 ## 2.日志模式
 
 日志模式分为：
